@@ -1,0 +1,35 @@
+{
+  "cell": "prune-dce:disabled",
+  "phase": "measured",
+  "round": 0,
+  "id": "0017-prune-dce-disabled",
+  "invalid_reasons": [],
+  "exit_code": 0,
+  "cache_certainty": "disabled",
+  "cache_before": {},
+  "cache_after": {},
+  "metrics": {
+    "process_peak_bytes": 170868736,
+    "core-ready_heap_alloc_bytes": 107741488,
+    "core-ready_rss_bytes": 162529280,
+    "core-ready_main_pages": 62,
+    "core-ready_kernel_pages": 16,
+    "core-ready_operation_ns": 1785106208,
+    "settled_heap_alloc_bytes": 115127640,
+    "settled_rss_bytes": 170868736,
+    "settled_main_pages": 63,
+    "settled_kernel_pages": 16,
+    "settled_operation_ns": 0,
+    "closed_heap_alloc_bytes": 115167344,
+    "closed_rss_bytes": 170901504,
+    "closed_main_pages": 0,
+    "closed_kernel_pages": 0,
+    "closed_operation_ns": 57167,
+    "cache_bytes": 0
+  },
+  "raw_sha256": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command.json": "30515034161ee8607c5b962ae878999aa8b8685da6a0e4689b26c7d4387f22e6",
+    "stdout.jsonl": "03cce97b571c647961ab1d8053450931631966cad0d67a1fdec5fe1e5f56a926"
+  }
+}

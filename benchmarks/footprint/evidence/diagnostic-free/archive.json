@@ -1,0 +1,82 @@
+{
+  "0000-original-disabled/command.json": {
+    "source": "0000-original-disabled/command.json",
+    "sha256": "72926f345eb198b03786e9c271236e69f93d5ef12ebac96a17cf157c49c27cde",
+    "bytes": 317
+  },
+  "0000-original-disabled/stderr.txt": {
+    "source": "0000-original-disabled/stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "0000-original-disabled/stdout.jsonl": {
+    "source": "0000-original-disabled/stdout.jsonl",
+    "sha256": "45492a4c46045754eacdb730a815fbb4eb3bd284dd0b210aefff91263bf2489d",
+    "bytes": 5628
+  },
+  "0000-original-disabled/trial.json": {
+    "source": "0000-original-disabled/trial.json",
+    "sha256": "b90636cb07c7f14cc856d37e514e7249f6e51074fd402f9f630a6047d04c3721",
+    "bytes": 1122
+  },
+  "builds/original/bench.mod": {
+    "source": "builds/original/bench.mod",
+    "sha256": "a10d42bdd30765b57b2122b52c44eb815a1642172c674010f3940713c38a0dc3",
+    "bytes": 895
+  },
+  "builds/original/bench.sum": {
+    "source": "builds/original/bench.sum",
+    "sha256": "3c0a04debbaad23bd76ad03f7c4b334e00900f56daeca75116d80546f6c622f0",
+    "bytes": 2781
+  },
+  "builds/original/build.json": {
+    "source": "builds/original/build.json",
+    "sha256": "624c55a130a54a4f5c544cccb6bccbb8f7266a05791aabdaa9cebb253882010e",
+    "bytes": 6394
+  },
+  "builds/original/dependency-digests.json": {
+    "source": "builds/original/dependency-digests.json",
+    "sha256": "f2f5fbb6d4fbd90457277c2c04a4089dfe9e7102a2568e45cc252e3d504e7678",
+    "bytes": 3949
+  },
+  "builds/original/extism_core.go.txt": {
+    "source": "builds/original/extism_core.go",
+    "sha256": "200eb6a8cba8d178dcf0e3aba6edced46bdf432b1bceadb65d8fb297e1346aca",
+    "bytes": 4701
+  },
+  "builds/original/module.go.txt": {
+    "source": "builds/original/module.go",
+    "sha256": "0aee946177fde4ad23a2fdb792dc699f8b33eb07b6bd6120967f57da55d621f3",
+    "bytes": 1074
+  },
+  "builds/original/overlay.json": {
+    "source": "builds/original/overlay.json",
+    "sha256": "dd60c14168270e5b19d5800a1a549c17c81cf7d15b9d1fbaa5b96733afb54c17",
+    "bytes": 736
+  },
+  "go.mod": {
+    "source": "go.mod",
+    "sha256": "328c132a9687af274401275fd919f355c181af8922d3f334c3e5365559454e55",
+    "bytes": 37
+  },
+  "host-after.json": {
+    "source": "host-after.json",
+    "sha256": "f16e566bfd310732064893a0cefb8f66b524873097f0ae195f20c80253f6dac6",
+    "bytes": 586
+  },
+  "manifest.json": {
+    "source": "manifest.json",
+    "sha256": "84feedd6ea84cf6a4e95f4f8bc75f5e03471cbcda9ae04b720caef61eb6296e1",
+    "bytes": 1943
+  },
+  "summary.json": {
+    "source": "summary.json",
+    "sha256": "ab0b84dd33bc79bdd9572876be9eddd8da847bfdcac0e54065c760dadb808eba",
+    "bytes": 2564
+  },
+  "trials.json": {
+    "source": "trials.json",
+    "sha256": "5879c6b70193e209f3e3dfd88bce206aa2dff03152c2b1d43ef110d806fbfa9f",
+    "bytes": 1196
+  }
+}

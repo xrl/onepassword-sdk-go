@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/final/stripped/probe",
+    "--calls=0",
+    "--settle=0",
+    "--cache=/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/reviewed-smoke/cache-0012-stripped-warm-rw"
+  ],
+  "GOMEMLIMIT": "off",
+  "GOGC": "100",
+  "start_ns": 1788562640632791000
+}

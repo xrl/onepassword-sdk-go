@@ -1,0 +1,147 @@
+{
+  "host": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "uname": [
+      "Darwin",
+      "<redacted>",
+      "25.6.0",
+      "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+      "arm64",
+      "arm"
+    ],
+    "cpu_count": 10,
+    "page_bytes": 16384,
+    "load": [
+      5.9130859375,
+      5.90087890625,
+      5.0869140625
+    ],
+    "page_cache_protocol": "Uncontrolled host cache; no purge. Per-cell fresh directory, warm population reads whole cache files to hash them before trial. Anonymous executable mappings remain separate from file cache."
+  },
+  "options": {
+    "build": [
+      "original=benchmarks/footprint/generated/final/original",
+      "stripped=benchmarks/footprint/generated/final/stripped",
+      "prune-only=benchmarks/footprint/generated/final/prune-only",
+      "prune-dce=benchmarks/footprint/generated/final/prune-dce",
+      "prune-oz=benchmarks/footprint/generated/final/prune-oz",
+      "original-oz=benchmarks/footprint/generated/final/original-oz"
+    ],
+    "out": "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/reviewed-smoke",
+    "cache": [
+      "disabled",
+      "empty",
+      "warm-rw"
+    ],
+    "repeats": 1,
+    "warmups": 0,
+    "seed": 285,
+    "calls": 2,
+    "input_bytes": 64,
+    "settle": "0",
+    "diagnostic": "none",
+    "systemd": false
+  },
+  "order": [
+    {
+      "cell": "stripped:disabled",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "original-oz:warm-rw",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "prune-oz:empty",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "original:warm-rw",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "prune-only:warm-rw",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "original-oz:disabled",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "prune-dce:warm-rw",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "prune-dce:empty",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "original-oz:empty",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "original:disabled",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "prune-only:empty",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "prune-only:disabled",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "stripped:warm-rw",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "stripped:empty",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "original:empty",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "prune-oz:warm-rw",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "prune-oz:disabled",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "prune-dce:disabled",
+      "phase": "measured",
+      "round": 0
+    }
+  ],
+  "source_sha256": {
+    "archive.py": "85da8595cc4696537bb76f5082265b36ac67d87939942802c116e717b10c4a76",
+    "artifacts.py": "8ab43eb2eebab0e4954d750121d191ea3ae79477cfffea0ce71deb9c00271e93",
+    "build.py": "3bd0ae32b86ed550db62e6e7edbdcf530bed23ac08df5fb85a2c50dfb0023074",
+    "controller.py": "28b32ce1816a4387e4ad510842d04ea01f3299ed1bbbffbc3b9bb49eacc2eff7",
+    "linux_trial.py": "79a3aeda172510ae581ee55abd29c47cd5f10ff6a6c8f40f3cb74a7881cdbe88",
+    "tests/test_archive.py": "377020ed7d7124e307d919126bd74ef148a554c4dd93c8cd4885f896470eb55c",
+    "tests/test_artifacts.py": "1f61beac672ba0759c636a659c488f83d3c0b9e838c9e7def64317a259e78dbe",
+    "tests/test_controller.py": "8b1bf6ca5706da404f8af764bc0d8debab7f046f2fea83872b668f510e94a17c"
+  }
+}

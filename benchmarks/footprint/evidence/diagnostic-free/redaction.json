@@ -1,0 +1,17 @@
+{
+  "reason": "Pre-publication redaction of private uname nodename only. Trial measurements unchanged.",
+  "redactions": [
+    {
+      "file": "manifest.json",
+      "field": "host.uname[1]",
+      "original_sha256": "94527af7ccd4ff9d5a3a8bbfc9c6b2e1e8055919e7f811ea35a12e51f87a1552",
+      "published_sha256": "84feedd6ea84cf6a4e95f4f8bc75f5e03471cbcda9ae04b720caef61eb6296e1"
+    },
+    {
+      "file": "host-after.json",
+      "field": "uname[1]",
+      "original_sha256": "bd043539a5896bc590838a6d3f449b115ac75edcd0c4bb511ef7d1d87a30b823",
+      "published_sha256": "f16e566bfd310732064893a0cefb8f66b524873097f0ae195f20c80253f6dac6"
+    }
+  ]
+}

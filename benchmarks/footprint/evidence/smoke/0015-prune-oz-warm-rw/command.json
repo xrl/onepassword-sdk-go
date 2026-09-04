@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/final/prune-oz/probe",
+    "--calls=2",
+    "--settle=0",
+    "--input-bytes=64",
+    "--diagnostic=none",
+    "--cache=/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/reviewed-smoke/cache-0015-prune-oz-warm-rw"
+  ],
+  "GOMEMLIMIT": "off",
+  "GOGC": "100",
+  "start_ns": 1788562649251653000
+}

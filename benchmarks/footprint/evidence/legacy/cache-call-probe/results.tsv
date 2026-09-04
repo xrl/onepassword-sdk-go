@@ -1,0 +1,15 @@
+1	nocache_call	172556288	call_rc=4294967295 call_error=true rss_kib=168512 heap_alloc=20504648 heap_sys=125337600 heap_released=5513216 sys=134342952
+1	warmcache_nocall	68009984	rss_kib=66400 heap_alloc=16697432 heap_sys=24772608 heap_released=6373376 sys=31623432
+1	warmcache_call	78479360	call_rc=4294967295 call_error=true rss_kib=76640 heap_alloc=20488896 heap_sys=33161216 heap_released=6602752 sys=40360216
+2	nocache_call	172441600	call_rc=4294967295 call_error=true rss_kib=168400 heap_alloc=20504968 heap_sys=125337600 heap_released=5480448 sys=134621480
+2	warmcache_nocall	67977216	rss_kib=66384 heap_alloc=16724312 heap_sys=20578304 heap_released=2088960 sys=28039448
+2	warmcache_call	78643200	call_rc=4294967295 call_error=true rss_kib=76800 heap_alloc=20516048 heap_sys=33161216 heap_released=6430720 sys=40098072
+3	nocache_call	172933120	call_rc=4294967295 call_error=true rss_kib=168864 heap_alloc=20531832 heap_sys=129499136 heap_released=9625600 sys=138848552
+3	warmcache_nocall	67715072	rss_kib=66128 heap_alloc=16692032 heap_sys=24838144 heap_released=6635520 sys=32164104
+3	warmcache_call	77709312	call_rc=4294967295 call_error=true rss_kib=75888 heap_alloc=20494472 heap_sys=33128448 heap_released=6455296 sys=41163032
+4	nocache_call	172048384	call_rc=4294967295 call_error=true rss_kib=168016 heap_alloc=20531784 heap_sys=125337600 heap_released=6193152 sys=134621480
+4	warmcache_nocall	68304896	rss_kib=66704 heap_alloc=16697592 heap_sys=24805376 heap_released=6193152 sys=32147720
+4	warmcache_call	77578240	call_rc=4294967295 call_error=true rss_kib=75760 heap_alloc=20494520 heap_sys=33128448 heap_released=6438912 sys=40376600
+5	nocache_call	172113920	call_rc=4294967295 call_error=true rss_kib=168080 heap_alloc=20532024 heap_sys=129499136 heap_released=10248192 sys=138553640
+5	warmcache_nocall	68157440	rss_kib=66560 heap_alloc=16697512 heap_sys=20578304 heap_released=2113536 sys=27707656
+5	warmcache_call	78725120	call_rc=4294967295 call_error=true rss_kib=76880 heap_alloc=20516320 heap_sys=33161216 heap_released=6283264 sys=40044808

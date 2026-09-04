@@ -1,0 +1,9 @@
+{
+  "command": [
+    "benchmarks/footprint/generated/final/original/probe",
+    "--idle"
+  ],
+  "binary_sha256": "58fedccedec4fb2f765a603ad848f060ea9208c6b768682be8c90a3327f3936f",
+  "raw_sha256": "6a551521e9002d32d47f1e40e277ca56b533b5b0b2fb2c5c1d522b3234336960",
+  "source_build_manifest": "../smoke/builds/original/build.json"
+}

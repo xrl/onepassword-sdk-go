@@ -1,0 +1,54 @@
+{
+  "source_sha256": {
+    "go.mod": "eb3eb350c6fb9399c276b3c2189e3b478bb32c29e4483bb428e1325a34c3fd86",
+    "go.sum": "3c0a04debbaad23bd76ad03f7c4b334e00900f56daeca75116d80546f6c622f0",
+    "internal/footprint_benchmark.go": "23e6d94dc653821e953f3a9ff8422f1a8253f698f1ffa17e23ec8b529169c5a2",
+    "benchmarks/footprint/build.py": "3bd0ae32b86ed550db62e6e7edbdcf530bed23ac08df5fb85a2c50dfb0023074",
+    "benchmarks/footprint/cmd/probe/main.go": "a495ed5d8c21c617bb32b1556ef3c795c280ab8f4fd3f3bf5133c00da178d895",
+    "benchmarks/footprint/cmd/probe/main_test.go": "02d740ca241de637c17fe43bb2bd52cd74258ca80b1b5437ec47a36c629a00e3",
+    "benchmarks/footprint/cmd/probe/metrics.go": "20aaef7d5cf293b6add86d8afffc32571ede680b39252941f5de73d296548d62",
+    "benchmarks/footprint/cmd/probe/rss_darwin.go": "676899737eeaaf9172c2e8dc8593202adb87ed50c594f9e255201f4a3c6e0cd3",
+    "benchmarks/footprint/cmd/probe/rss_linux.go": "74a51bbc2aeab98b57b99c6e14a54bb66a8ad77db2cc199992e0c277f52edd3d"
+  },
+  "command": [
+    "go",
+    "build",
+    "-modfile=/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/final/original-oz/bench.mod",
+    "-trimpath",
+    "-pgo=off",
+    "-tags=footprint",
+    "-overlay=/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/final/original-oz/overlay.json",
+    "-o",
+    "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/final/original-oz/probe",
+    "./benchmarks/footprint/cmd/probe"
+  ],
+  "environment": {
+    "CGO_ENABLED": "0",
+    "GOOS": "darwin",
+    "GOARCH": "arm64",
+    "GOPROXY": "off",
+    "GOTOOLCHAIN": "local",
+    "GOFLAGS": "",
+    "GOAMD64": "v1",
+    "GOARM64": "v8.0",
+    "GOEXPERIMENT": ""
+  },
+  "go": "go version go1.27.1 darwin/arm64",
+  "commit": "da768afd327a9393e7bb8033d0d3fa01f9e999fd",
+  "dirty": "?? benchmarks/\n?? docs/\n?? internal/footprint_benchmark.go\n?? internal/footprint_benchmark_test.go",
+  "artifact_sha256": "d6c8db3365c14b16cdbdb5d9106d607e5bfaf6efcaef89abda40e31f680d0d93",
+  "artifact_bytes": 7638637,
+  "binary_sha256": "4625b7d154ad1bd13b256cf4e918520d114609716ddf00fc83d46b7a627f4bff",
+  "extism_module_original_sha256": "32dc5975297e2714f06c703afed6d2267b1c457ccbd6e03489677292bcf8d039",
+  "sdk_loader_original_sha256": "5699466b3ee35f78ef2d82d7b25da867408298d135fda7a116eeb5f71995f4c8",
+  "overlay_sources": {
+    "module.go": "0aee946177fde4ad23a2fdb792dc699f8b33eb07b6bd6120967f57da55d621f3",
+    "extism_core.go": "200eb6a8cba8d178dcf0e3aba6edced46bdf432b1bceadb65d8fb297e1346aca",
+    "overlay.json": "0f156f78e8be71b24dbf233a2bb1a572dd05f25a987a7779366b1bf7c56216ce",
+    "bench.mod": "8401b817ff1b4a2f3e917f2a45976ec03d4725e69c17c34c896f9a2fcb0df8b2",
+    "bench.sum": "3c0a04debbaad23bd76ad03f7c4b334e00900f56daeca75116d80546f6c622f0",
+    "dependency-digests.json": "f2f5fbb6d4fbd90457277c2c04a4089dfe9e7102a2568e45cc252e3d504e7678"
+  },
+  "dependencies": "github.com/1password/onepassword-sdk-go\ngithub.com/cenkalti/backoff/v4 v4.3.0\ngithub.com/davecgh/go-spew v1.1.1\ngithub.com/dylibso/observe-sdk/go v0.0.0-20240828172851-9145d8ad07e1\ngithub.com/extism/go-sdk v1.7.1\ngithub.com/go-logr/logr v1.4.2\ngithub.com/go-logr/stdr v1.2.2\ngithub.com/gobwas/glob v0.2.3\ngithub.com/golang/protobuf v1.5.4\ngithub.com/google/go-cmp v0.7.0\ngithub.com/google/uuid v1.6.0\ngithub.com/grpc-ecosystem/grpc-gateway/v2 v2.27.2\ngithub.com/ianlancetaylor/demangle v0.0.0-20251118225945-96ee0021ea0f\ngithub.com/pmezard/go-difflib v1.0.0\ngithub.com/stretchr/objx v0.5.2\ngithub.com/stretchr/testify v1.11.1\ngithub.com/tetratelabs/wabin v0.0.0-20230304001439-f6f874872834\ngithub.com/tetratelabs/wazero v1.11.0\ngo.opentelemetry.io/otel v1.28.0\ngo.opentelemetry.io/otel/exporters/otlp/otlptrace v1.28.0\ngo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.28.0\ngo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.28.0\ngo.opentelemetry.io/otel/metric v1.28.0\ngo.opentelemetry.io/otel/sdk v1.28.0\ngo.opentelemetry.io/otel/trace v1.28.0\ngo.opentelemetry.io/proto/otlp v1.9.0\ngolang.org/x/net v0.43.0\ngolang.org/x/sys v0.40.0\ngolang.org/x/text v0.28.0\ngoogle.golang.org/genproto/googleapis/api v0.0.0-20250825161204-c5933d9347a5\ngoogle.golang.org/genproto/googleapis/rpc v0.0.0-20250825161204-c5933d9347a5\ngoogle.golang.org/grpc v1.75.1\ngoogle.golang.org/protobuf v1.36.11\ngopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405\ngopkg.in/yaml.v3 v3.0.1",
+  "build_info": "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/final/original-oz/probe: go1.27.1\n\tpath\tgithub.com/1password/onepassword-sdk-go/benchmarks/footprint/cmd/probe\n\tmod\tgithub.com/1password/onepassword-sdk-go\tv0.4.2-0.20260904052948-da768afd327a+dirty\t\n\tdep\tgithub.com/dylibso/observe-sdk/go\tv0.0.0-20240828172851-9145d8ad07e1\th1:idfl8M8rPW93NehFw5H1qqH8yG158t5POr+LX9avbJY=\n\tdep\tgithub.com/extism/go-sdk\tv1.7.1\n\t=>\t/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/final/original-oz/extism\t(devel)\t\n\t\n\tdep\tgithub.com/gobwas/glob\tv0.2.3\th1:A4xDbljILXROh+kObIiy5kIaPYD8e96x1tgBhUI5J+Y=\n\tdep\tgithub.com/ianlancetaylor/demangle\tv0.0.0-20251118225945-96ee0021ea0f\th1:Fnl4pzx8SR7k7JuzyW8lEtSFH6EQ8xgcypgIn8pcGIE=\n\tdep\tgithub.com/tetratelabs/wabin\tv0.0.0-20230304001439-f6f874872834\th1:ZF+QBjOI+tILZjBaFj3HgFonKXUcwgJ4djLb6i42S3Q=\n\tdep\tgithub.com/tetratelabs/wazero\tv1.11.0\th1:+gKemEuKCTevU4d7ZTzlsvgd1uaToIDtlQlmNbwqYhA=\n\tdep\tgo.opentelemetry.io/proto/otlp\tv1.9.0\th1:l706jCMITVouPOqEnii2fIAuO3IVGBRPV5ICjceRb/A=\n\tdep\tgolang.org/x/sys\tv0.40.0\th1:DBZZqJ2Rkml6QMQsZywtnjnnGvHza6BTfYFWY9kjEWQ=\n\tdep\tgoogle.golang.org/protobuf\tv1.36.11\th1:fV6ZwhNocDyBLK0dj+fg8ektcVegBBuEolpbTQyBNVE=\n\tbuild\t-buildmode=exe\n\tbuild\t-compiler=gc\n\tbuild\t-tags=footprint\n\tbuild\t-trimpath=true\n\tbuild\tDefaultGODEBUG=containermaxprocs=0,cryptocustomrand=1,decoratemappings=0,tlssecpmlkem=0,tlssha1=1,tracebacklabels=0,updatemaxprocs=0,urlstrictcolons=0,x509sha256skid=0,x509sslcertoverrideplatform=0\n\tbuild\tCGO_ENABLED=0\n\tbuild\tGOARCH=arm64\n\tbuild\tGOOS=darwin\n\tbuild\tGOARM64=v8.0\n\tbuild\tvcs=git\n\tbuild\tvcs.revision=da768afd327a9393e7bb8033d0d3fa01f9e999fd\n\tbuild\tvcs.time=2026-09-04T05:29:48Z\n\tbuild\tvcs.modified=true"
+}

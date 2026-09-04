@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/final/original/probe",
+    "--calls=1",
+    "--settle=0",
+    "--input-bytes=64",
+    "--diagnostic=free-os-memory"
+  ],
+  "GOMEMLIMIT": "off",
+  "GOGC": "100",
+  "start_ns": 1788562655954248000
+}
