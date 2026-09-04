@@ -70,13 +70,13 @@ The controller interleaves cells with a recorded seed, launches sequential fresh
 - `disabled`: no cache access.
 - `empty`: per-trial fresh writable directory; measures population penalty. May peak higher than disabled.
 - `warm-rw`: independently populated by a successful fresh probe, then reused. Public Wazero API exposes no hit signal, so **outcome remains unknown**, not require-hit support.
-- `warm-ro`: Linux systemd read-only bind mount only; an `EROFS` write-check followed by successful load/guest smoke with one attempt, no retry/fallback wrapper, existing and unchanged entry hashes establishes a **known hit for this pinned version**. Missing/corrupt/stale entries can still compile first and fail on write: this is not strict miss handling and still needs 512-MiB headroom. No cache format is parsed. Automated stale/corrupt injection is not included in this compact slice.
+- `warm-ro`: Linux systemd read-only bind mount only; an `EROFS` write-check followed by successful load/guest smoke with one attempt, no retry/fallback wrapper, existing and unchanged entry hashes establishes a **known hit for this pinned version**. Missing/corrupt/stale entries can still compile first and fail on write: this is not strict miss handling and still needs 512-MiB headroom. No cache format is parsed. `cache_failures.py` tests a missing core entry, a different embedded core, and truncation of the task-owned core entry under verified read-only mounts. It preserves the version directory and Extism entry so the missing-entry test actually reaches SDK compilation rather than merely failing directory creation. These negative tests confirm startup failure, not strict miss handling.
 
 All caches are owner-only task-owned code artifacts. Hashes are not signatures. Do not use untrusted caches or export native blobs to the evidence archive.
 
 ## Linux/ARM64 next operator
 
-Full campaigns are the next writer's job. Linux runner code is cross-compiled/inspected here but **not exercised remotely in this delivery**. First run one smoke cell on the preflighted host, verify health/fresh cgroup/limits/network isolation/metrics, then expand sequentially. Stop for host pressure or privilege problems; never alter the cluster, swap, node page cache or production limits.
+The Linux runner has now passed live isolated smoke, artifact/cache/tuning screening, and read-only-cache negative cases on the target ARM64 host. Confirmation results are recorded separately from screening. Reproductions should first run one smoke cell, verify health/fresh cgroup/limits/network isolation/metrics, then expand sequentially. Stop for host pressure or privilege problems; never alter the cluster, swap, node page cache or production limits.
 
 Build locally:
 
@@ -110,7 +110,7 @@ $SSH xlange@rpi.lan "cd '$REMOTE' && python3 controller.py --systemd \
 
 Every measured **and population** process gets a fresh transient cgroup, `User=xlange`, `MemoryMax=512M`, `MemorySwapMax=0`, `CPUQuota=200%`, `LimitCORE=0`, `RuntimeMaxSec=180`, bounded stop, `PrivateNetwork=yes`, `NoNewPrivileges=yes`, owner-only umask. A small Python supervisor lives inside the same cgroup to preserve final `memory.peak/events/stat` after probe exit. Its memory is **included**, so keep identical instrumentation across all cells. Unit names are task-prefixed/unique and collected after exit. Controller rejects missing metrics, pressure events, wrong memory/CPU limits, protocol errors, wrong embedded digest/dependencies, multiple attempts/identities and unexpected guest/stderr outcomes. Population processes have separate raw results and their own cgroups; their work is not hidden inside warm-load peaks.
 
-After accepting the remote smoke, use all six `--build` entries, `--cache disabled --cache empty --cache warm-ro --warmups 2 --repeats 10 --calls 10 --settle 1s` and a new output directory. Separate further jobs for `--settle 10s`, `30s`, `120s`, larger bounded malformed inputs, `--diagnostic gc`, `--diagnostic free-os-memory`, and explicit application `GOMEMLIMIT`. Authentication/representative reads and full ESO startup remain blocked; none of these malformed-input jobs substitutes for them.
+After accepting the remote smoke, screen all six artifacts with `--cache disabled --warmups 1 --repeats 3 --calls 3 --settle 1s`, then screen cache/tuning combinations separately. Confirm only selected attributable cells with `--warmups 2 --repeats 10 --calls 3 --settle 30s`, including the unmodified baseline. Do not multiply every artifact, mode and settle duration into an unnecessary large campaign. Diagnostic GC/FreeOSMemory, larger malformed input and application memory-limit settings remain separately labeled. Authentication/representative reads and full ESO startup remain blocked; none of these malformed-input jobs substitutes for them.
 
 Archive small evidence on the target, then copy it back for review (do not commit native/cache blobs):
 
