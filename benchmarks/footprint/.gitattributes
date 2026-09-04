@@ -1,0 +1,3 @@
+# Immutable historical inputs retain original bytes/line endings and checksums.
+evidence/legacy/p0/raw.csv -text whitespace=cr-at-eol
+evidence/legacy/p0/protocol.md -text -whitespace
