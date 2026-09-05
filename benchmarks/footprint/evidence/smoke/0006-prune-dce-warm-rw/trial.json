@@ -1,0 +1,53 @@
+{
+  "cell": "prune-dce:warm-rw",
+  "phase": "measured",
+  "round": 0,
+  "id": "0006-prune-dce-warm-rw",
+  "invalid_reasons": [],
+  "exit_code": 0,
+  "cache_certainty": "unknown-public-api-no-hit-signal",
+  "cache_before": {
+    "wazero-v1.11.0-arm64-darwin/0a24d2a7cf81703ede39631af4ff1aeddb8ba0854c7e4824cb0bd5d370029142": {
+      "sha256": "25565c14a0bab658da7d8dd7bcc490b410ea4bdfac2adf2677722f647ba854d5",
+      "bytes": 26110043
+    },
+    "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+      "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+      "bytes": 22063
+    }
+  },
+  "cache_after": {
+    "wazero-v1.11.0-arm64-darwin/0a24d2a7cf81703ede39631af4ff1aeddb8ba0854c7e4824cb0bd5d370029142": {
+      "sha256": "25565c14a0bab658da7d8dd7bcc490b410ea4bdfac2adf2677722f647ba854d5",
+      "bytes": 26110043
+    },
+    "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+      "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+      "bytes": 22063
+    }
+  },
+  "metrics": {
+    "process_peak_bytes": 73793536,
+    "core-ready_heap_alloc_bytes": 15202712,
+    "core-ready_rss_bytes": 65519616,
+    "core-ready_main_pages": 62,
+    "core-ready_kernel_pages": 16,
+    "core-ready_operation_ns": 74899459,
+    "settled_heap_alloc_bytes": 22589816,
+    "settled_rss_bytes": 73793536,
+    "settled_main_pages": 63,
+    "settled_kernel_pages": 16,
+    "settled_operation_ns": 0,
+    "closed_heap_alloc_bytes": 22628560,
+    "closed_rss_bytes": 73826304,
+    "closed_main_pages": 0,
+    "closed_kernel_pages": 0,
+    "closed_operation_ns": 30750,
+    "cache_bytes": 26132106
+  },
+  "raw_sha256": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command.json": "b32b7329eee5a914e286bfc252412995667314411c826a6969955fcb8c6856d5",
+    "stdout.jsonl": "b52704d2bd4b2045f6661f6f5b7f02c466a3a89f410e77a7b661c521ea816590"
+  }
+}

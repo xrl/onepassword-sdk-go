@@ -1,0 +1,2252 @@
+{
+  "stripped:disabled": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 169410560,
+        "min": 169410560,
+        "max": 169410560,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 105319696,
+        "min": 105319696,
+        "max": 105319696,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 160890880,
+        "min": 160890880,
+        "max": 160890880,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 1814285000,
+        "min": 1814285000,
+        "max": 1814285000,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 112929864,
+        "min": 112929864,
+        "max": 112929864,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 169394176,
+        "min": 169394176,
+        "max": 169394176,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 112969088,
+        "min": 112969088,
+        "max": 112969088,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 169476096,
+        "min": 169476096,
+        "max": 169476096,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 22083,
+        "min": 22083,
+        "max": 22083,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "original-oz:warm-rw": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 69156864,
+        "min": 69156864,
+        "max": 69156864,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 14378624,
+        "min": 14378624,
+        "max": 14378624,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 61390848,
+        "min": 61390848,
+        "max": 61390848,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 65739042,
+        "min": 65739042,
+        "max": 65739042,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 21203240,
+        "min": 21203240,
+        "max": 21203240,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 69156864,
+        "min": 69156864,
+        "max": 69156864,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 21245912,
+        "min": 21245912,
+        "max": 21245912,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 69189632,
+        "min": 69189632,
+        "max": 69189632,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 29875,
+        "min": 29875,
+        "max": 29875,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 23461254,
+        "min": 23461254,
+        "max": 23461254,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "prune-oz:empty": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 301776896,
+        "min": 301776896,
+        "max": 301776896,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 240402368,
+        "min": 240402368,
+        "max": 240402368,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 294109184,
+        "min": 294109184,
+        "max": 294109184,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 1944612791,
+        "min": 1944612791,
+        "max": 1944612791,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 247128704,
+        "min": 247128704,
+        "max": 247128704,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 301776896,
+        "min": 301776896,
+        "max": 301776896,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 247169904,
+        "min": 247169904,
+        "max": 247169904,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 301776896,
+        "min": 301776896,
+        "max": 301776896,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 52917,
+        "min": 52917,
+        "max": 52917,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 23461150,
+        "min": 23461150,
+        "max": 23461150,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "original:warm-rw": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 78577664,
+        "min": 78577664,
+        "max": 78577664,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 17098968,
+        "min": 17098968,
+        "max": 17098968,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 68829184,
+        "min": 68829184,
+        "max": 68829184,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 82898917,
+        "min": 82898917,
+        "max": 82898917,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 25330528,
+        "min": 25330528,
+        "max": 25330528,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 78577664,
+        "min": 78577664,
+        "max": 78577664,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 25372688,
+        "min": 25372688,
+        "max": 25372688,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 78610432,
+        "min": 78610432,
+        "max": 78610432,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 27375,
+        "min": 27375,
+        "max": 27375,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 26261274,
+        "min": 26261274,
+        "max": 26261274,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "prune-only:warm-rw": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 77905920,
+        "min": 77905920,
+        "max": 77905920,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 16586040,
+        "min": 16586040,
+        "max": 16586040,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 67993600,
+        "min": 67993600,
+        "max": 67993600,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 78815791,
+        "min": 78815791,
+        "max": 78815791,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 25076368,
+        "min": 25076368,
+        "max": 25076368,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 77905920,
+        "min": 77905920,
+        "max": 77905920,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 25116072,
+        "min": 25116072,
+        "max": 25116072,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 77905920,
+        "min": 77905920,
+        "max": 77905920,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 23083,
+        "min": 23083,
+        "max": 23083,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 26261274,
+        "min": 26261274,
+        "max": 26261274,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "original-oz:disabled": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 271335424,
+        "min": 271335424,
+        "max": 271335424,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 210023760,
+        "min": 210023760,
+        "max": 210023760,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 263634944,
+        "min": 263634944,
+        "max": 263634944,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 1928332458,
+        "min": 1928332458,
+        "max": 1928332458,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 216849432,
+        "min": 216849432,
+        "max": 216849432,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 271335424,
+        "min": 271335424,
+        "max": 271335424,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 216889136,
+        "min": 216889136,
+        "max": 216889136,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 271335424,
+        "min": 271335424,
+        "max": 271335424,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 42292,
+        "min": 42292,
+        "max": 42292,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "prune-dce:warm-rw": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 73793536,
+        "min": 73793536,
+        "max": 73793536,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 15202712,
+        "min": 15202712,
+        "max": 15202712,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 65519616,
+        "min": 65519616,
+        "max": 65519616,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 74899459,
+        "min": 74899459,
+        "max": 74899459,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 22589816,
+        "min": 22589816,
+        "max": 22589816,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 73793536,
+        "min": 73793536,
+        "max": 73793536,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 22628560,
+        "min": 22628560,
+        "max": 22628560,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 73826304,
+        "min": 73826304,
+        "max": 73826304,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 30750,
+        "min": 30750,
+        "max": 30750,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 26132106,
+        "min": 26132106,
+        "max": 26132106,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "prune-dce:empty": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 190644224,
+        "min": 190644224,
+        "max": 190644224,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 15213128,
+        "min": 15213128,
+        "max": 15213128,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 189415424,
+        "min": 189415424,
+        "max": 189415424,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 1873992166,
+        "min": 1873992166,
+        "max": 1873992166,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 22597296,
+        "min": 22597296,
+        "max": 22597296,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 190644224,
+        "min": 190644224,
+        "max": 190644224,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 22639568,
+        "min": 22639568,
+        "max": 22639568,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 190644224,
+        "min": 190644224,
+        "max": 190644224,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 24041,
+        "min": 24041,
+        "max": 24041,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 26132106,
+        "min": 26132106,
+        "max": 26132106,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "original-oz:empty": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 301563904,
+        "min": 301563904,
+        "max": 301563904,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 240612816,
+        "min": 240612816,
+        "max": 240612816,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 293847040,
+        "min": 293847040,
+        "max": 293847040,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 1964996167,
+        "min": 1964996167,
+        "max": 1964996167,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 247437488,
+        "min": 247437488,
+        "max": 247437488,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 301563904,
+        "min": 301563904,
+        "max": 301563904,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 247478800,
+        "min": 247478800,
+        "max": 247478800,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 301596672,
+        "min": 301596672,
+        "max": 301596672,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 33584,
+        "min": 33584,
+        "max": 33584,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 23461254,
+        "min": 23461254,
+        "max": 23461254,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "original:disabled": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 173277184,
+        "min": 173277184,
+        "max": 173277184,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 106777360,
+        "min": 106777360,
+        "max": 106777360,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 163758080,
+        "min": 163758080,
+        "max": 163758080,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 1842247791,
+        "min": 1842247791,
+        "max": 1842247791,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 115672448,
+        "min": 115672448,
+        "max": 115672448,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 173277184,
+        "min": 173277184,
+        "max": 173277184,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 115715120,
+        "min": 115715120,
+        "max": 115715120,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 173326336,
+        "min": 173326336,
+        "max": 173326336,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 63209,
+        "min": 63209,
+        "max": 63209,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "prune-only:empty": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 193052672,
+        "min": 193052672,
+        "max": 193052672,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 16604136,
+        "min": 16604136,
+        "max": 16604136,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 191971328,
+        "min": 191971328,
+        "max": 191971328,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 1875561208,
+        "min": 1875561208,
+        "max": 1875561208,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 25453616,
+        "min": 25453616,
+        "max": 25453616,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 193052672,
+        "min": 193052672,
+        "max": 193052672,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 25492376,
+        "min": 25492376,
+        "max": 25492376,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 193052672,
+        "min": 193052672,
+        "max": 193052672,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 25583,
+        "min": 25583,
+        "max": 25583,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 26261274,
+        "min": 26261274,
+        "max": 26261274,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "prune-only:disabled": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 174555136,
+        "min": 174555136,
+        "max": 174555136,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 108190984,
+        "min": 108190984,
+        "max": 108190984,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 164937728,
+        "min": 164937728,
+        "max": 164937728,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 1815276250,
+        "min": 1815276250,
+        "max": 1815276250,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 117036712,
+        "min": 117036712,
+        "max": 117036712,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 174555136,
+        "min": 174555136,
+        "max": 174555136,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 117078872,
+        "min": 117078872,
+        "max": 117078872,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 174587904,
+        "min": 174587904,
+        "max": 174587904,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 28875,
+        "min": 28875,
+        "max": 28875,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "stripped:warm-rw": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 74399744,
+        "min": 74399744,
+        "max": 74399744,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 15378688,
+        "min": 15378688,
+        "max": 15378688,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 65781760,
+        "min": 65781760,
+        "max": 65781760,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 74807125,
+        "min": 74807125,
+        "max": 74807125,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 22992448,
+        "min": 22992448,
+        "max": 22992448,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 74399744,
+        "min": 74399744,
+        "max": 74399744,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 23034608,
+        "min": 23034608,
+        "max": 23034608,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 74432512,
+        "min": 74432512,
+        "max": 74432512,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 27000,
+        "min": 27000,
+        "max": 27000,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 26261274,
+        "min": 26261274,
+        "max": 26261274,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "stripped:empty": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 197263360,
+        "min": 197263360,
+        "max": 197263360,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 133425432,
+        "min": 133425432,
+        "max": 133425432,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 188678144,
+        "min": 188678144,
+        "max": 188678144,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 1842244750,
+        "min": 1842244750,
+        "max": 1842244750,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 141038056,
+        "min": 141038056,
+        "max": 141038056,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 197263360,
+        "min": 197263360,
+        "max": 197263360,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 141076800,
+        "min": 141076800,
+        "max": 141076800,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 197296128,
+        "min": 197296128,
+        "max": 197296128,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 66000,
+        "min": 66000,
+        "max": 66000,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 26261274,
+        "min": 26261274,
+        "max": 26261274,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "original:empty": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 200671232,
+        "min": 200671232,
+        "max": 200671232,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 134829560,
+        "min": 134829560,
+        "max": 134829560,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 191004672,
+        "min": 191004672,
+        "max": 191004672,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 1851590500,
+        "min": 1851590500,
+        "max": 1851590500,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 143720952,
+        "min": 143720952,
+        "max": 143720952,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 200671232,
+        "min": 200671232,
+        "max": 200671232,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 143762152,
+        "min": 143762152,
+        "max": 143762152,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 200720384,
+        "min": 200720384,
+        "max": 200720384,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 38542,
+        "min": 38542,
+        "max": 38542,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 26261274,
+        "min": 26261274,
+        "max": 26261274,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "prune-oz:warm-rw": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 68534272,
+        "min": 68534272,
+        "max": 68534272,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 14187528,
+        "min": 14187528,
+        "max": 14187528,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 60882944,
+        "min": 60882944,
+        "max": 60882944,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 64563250,
+        "min": 64563250,
+        "max": 64563250,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 20912768,
+        "min": 20912768,
+        "max": 20912768,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 68534272,
+        "min": 68534272,
+        "max": 68534272,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 20952472,
+        "min": 20952472,
+        "max": 20952472,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 68534272,
+        "min": 68534272,
+        "max": 68534272,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 15709,
+        "min": 15709,
+        "max": 15709,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 23461150,
+        "min": 23461150,
+        "max": 23461150,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "prune-oz:disabled": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 285605888,
+        "min": 285605888,
+        "max": 285605888,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 224864600,
+        "min": 224864600,
+        "max": 224864600,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 278118400,
+        "min": 278118400,
+        "max": 278118400,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 1930425375,
+        "min": 1930425375,
+        "max": 1930425375,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 231585600,
+        "min": 231585600,
+        "max": 231585600,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 285605888,
+        "min": 285605888,
+        "max": 285605888,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 231625304,
+        "min": 231625304,
+        "max": 231625304,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 285605888,
+        "min": 285605888,
+        "max": 285605888,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 52500,
+        "min": 52500,
+        "max": 52500,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      }
+    }
+  },
+  "prune-dce:disabled": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 170868736,
+        "min": 170868736,
+        "max": 170868736,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 107741488,
+        "min": 107741488,
+        "max": 107741488,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 162529280,
+        "min": 162529280,
+        "max": 162529280,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 1785106208,
+        "min": 1785106208,
+        "max": 1785106208,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 115127640,
+        "min": 115127640,
+        "max": 115127640,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 170868736,
+        "min": 170868736,
+        "max": 170868736,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 115167344,
+        "min": 115167344,
+        "max": 115167344,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 170901504,
+        "min": 170901504,
+        "max": 170901504,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 57167,
+        "min": 57167,
+        "max": 57167,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      }
+    }
+  }
+}

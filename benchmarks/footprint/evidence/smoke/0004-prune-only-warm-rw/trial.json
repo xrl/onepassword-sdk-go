@@ -1,0 +1,53 @@
+{
+  "cell": "prune-only:warm-rw",
+  "phase": "measured",
+  "round": 0,
+  "id": "0004-prune-only-warm-rw",
+  "invalid_reasons": [],
+  "exit_code": 0,
+  "cache_certainty": "unknown-public-api-no-hit-signal",
+  "cache_before": {
+    "wazero-v1.11.0-arm64-darwin/4e6bfab5fff8d65908150f03b5c6ab273362218ad720af5878311ed478fa4b2f": {
+      "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+      "bytes": 26239211
+    },
+    "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+      "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+      "bytes": 22063
+    }
+  },
+  "cache_after": {
+    "wazero-v1.11.0-arm64-darwin/4e6bfab5fff8d65908150f03b5c6ab273362218ad720af5878311ed478fa4b2f": {
+      "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+      "bytes": 26239211
+    },
+    "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+      "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+      "bytes": 22063
+    }
+  },
+  "metrics": {
+    "process_peak_bytes": 77905920,
+    "core-ready_heap_alloc_bytes": 16586040,
+    "core-ready_rss_bytes": 67993600,
+    "core-ready_main_pages": 62,
+    "core-ready_kernel_pages": 16,
+    "core-ready_operation_ns": 78815791,
+    "settled_heap_alloc_bytes": 25076368,
+    "settled_rss_bytes": 77905920,
+    "settled_main_pages": 63,
+    "settled_kernel_pages": 16,
+    "settled_operation_ns": 0,
+    "closed_heap_alloc_bytes": 25116072,
+    "closed_rss_bytes": 77905920,
+    "closed_main_pages": 0,
+    "closed_kernel_pages": 0,
+    "closed_operation_ns": 23083,
+    "cache_bytes": 26261274
+  },
+  "raw_sha256": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command.json": "81622a94b0dbb01a864ac5a6d5d25197f3d58fc34595416a3db5a17dea60ac87",
+    "stdout.jsonl": "1c1274ebd6263b869d56215884cf951e4d9074d81d94caa57a4db9a9649e74a1"
+  }
+}

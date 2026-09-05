@@ -1,0 +1,127 @@
+{
+  "original:disabled": {
+    "valid": 1,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 174178304,
+        "min": 174178304,
+        "max": 174178304,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 108434112,
+        "min": 108434112,
+        "max": 108434112,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_rss_bytes": {
+        "median": 164708352,
+        "min": 164708352,
+        "max": 164708352,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "core-ready_operation_ns": {
+        "median": 1798398875,
+        "min": 1798398875,
+        "max": 1798398875,
+        "range": 0,
+        "n": 1
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 117076568,
+        "min": 117076568,
+        "max": 117076568,
+        "range": 0,
+        "n": 1
+      },
+      "settled_rss_bytes": {
+        "median": 174030848,
+        "min": 174030848,
+        "max": 174030848,
+        "range": 0,
+        "n": 1
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 1
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 1
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 20640928,
+        "min": 20640928,
+        "max": 20640928,
+        "range": 0,
+        "n": 1
+      },
+      "closed_rss_bytes": {
+        "median": 174243840,
+        "min": 174243840,
+        "max": 174243840,
+        "range": 0,
+        "n": 1
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      },
+      "closed_operation_ns": {
+        "median": 27042,
+        "min": 27042,
+        "max": 27042,
+        "range": 0,
+        "n": 1
+      },
+      "cache_bytes": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 1
+      }
+    }
+  }
+}

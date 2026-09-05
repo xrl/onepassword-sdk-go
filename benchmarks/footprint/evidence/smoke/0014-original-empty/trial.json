@@ -1,0 +1,44 @@
+{
+  "cell": "original:empty",
+  "phase": "measured",
+  "round": 0,
+  "id": "0014-original-empty",
+  "invalid_reasons": [],
+  "exit_code": 0,
+  "cache_certainty": "fresh-writable-population",
+  "cache_before": {},
+  "cache_after": {
+    "wazero-v1.11.0-arm64-darwin/52ec3756affa756c397d6e3270a98ceca2f50913a2f9dca5400abd012fa06568": {
+      "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+      "bytes": 26239211
+    },
+    "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+      "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+      "bytes": 22063
+    }
+  },
+  "metrics": {
+    "process_peak_bytes": 200671232,
+    "core-ready_heap_alloc_bytes": 134829560,
+    "core-ready_rss_bytes": 191004672,
+    "core-ready_main_pages": 62,
+    "core-ready_kernel_pages": 16,
+    "core-ready_operation_ns": 1851590500,
+    "settled_heap_alloc_bytes": 143720952,
+    "settled_rss_bytes": 200671232,
+    "settled_main_pages": 63,
+    "settled_kernel_pages": 16,
+    "settled_operation_ns": 0,
+    "closed_heap_alloc_bytes": 143762152,
+    "closed_rss_bytes": 200720384,
+    "closed_main_pages": 0,
+    "closed_kernel_pages": 0,
+    "closed_operation_ns": 38542,
+    "cache_bytes": 26261274
+  },
+  "raw_sha256": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command.json": "7d9a78925b1758ce3d6817f890bc08c54bf229d30622cf86ddf60a032d61b861",
+    "stdout.jsonl": "68db6bd072e43059c0f76280cca4e3cf288390fe0fcdaf2efdc2333994180663"
+  }
+}

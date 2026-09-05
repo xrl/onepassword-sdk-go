@@ -1,0 +1,7 @@
+{
+  "Replace": {
+    "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/final/original-oz/extism/module.go": "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/final/original-oz/module.go",
+    "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/internal/extism_core.go": "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/final/original-oz/extism_core.go",
+    "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/internal/wasm/core.wasm": "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/variants/original-oz.wasm"
+  }
+}

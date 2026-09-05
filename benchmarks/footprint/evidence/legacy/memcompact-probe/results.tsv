@@ -1,0 +1,10 @@
+1	gc	163430400	free=false rss_kib=159584 heap_alloc=16751560 heap_sys=116948992 heap_released=5201920 sys=126527784
+1	free	164708352	free=true rss_kib=160848 heap_alloc=16782824 heap_sys=116981760 heap_released=98476032 sys=126249256
+2	gc	164691968	free=false rss_kib=160832 heap_alloc=16784064 heap_sys=116948992 heap_released=4120576 sys=126408984
+2	free	164888576	free=true rss_kib=161024 heap_alloc=16755816 heap_sys=116948992 heap_released=98304000 sys=125851928
+3	gc	164642816	free=false rss_kib=160784 heap_alloc=16751768 heap_sys=121176064 heap_released=8404992 sys=130132264
+3	free	165216256	free=true rss_kib=161344 heap_alloc=16782968 heap_sys=121176064 heap_released=102719488 sys=130586904
+4	gc	165445632	free=false rss_kib=161568 heap_alloc=16784656 heap_sys=116883456 heap_released=3416064 sys=126146840
+4	free	164790272	free=true rss_kib=160928 heap_alloc=16783592 heap_sys=121143296 heap_released=102629376 sys=130394408
+5	gc	164511744	free=false rss_kib=160656 heap_alloc=16756560 heap_sys=116916224 heap_released=4112384 sys=126232872
+5	free	165560320	free=true rss_kib=161680 heap_alloc=16783096 heap_sys=116916224 heap_released=98238464 sys=126408984

@@ -1,0 +1,12 @@
+{
+  "reason": "Before first publication, private nodenames in six initial tooling host metadata files were redacted throughout this previously unpublished branch history. Metrics, measured Go inputs and the 357-process campaign bundles are unchanged.",
+  "measured_source_commit": "ca21b38cd6c4359d1898a30b79c771e9b7ce52ff",
+  "published_source_equivalent_commit": "61393f578ad42ad240ce156a8f2149515af2f1fd",
+  "reproduction_note": "Binary/build manifests truthfully retain the original local VCS revision. Use the published source-equivalent revision to reproduce; only VCS build-info metadata and sanitized evidence differ, not compiled Go inputs. Original and published host-metadata digests are in each initial dataset redaction.json.",
+  "commit_mapping": {
+    "3b0810613c03d50988e7515e2f7f3470e5430031": "68640878dadaa3ef4037d5b2d191acdbdabb7006",
+    "ca21b38cd6c4359d1898a30b79c771e9b7ce52ff": "61393f578ad42ad240ce156a8f2149515af2f1fd",
+    "c5cc360677d09f577b80010dc7db32780e54da9e": "8db7b5be52beefda578eae29c358babe5a2c918a",
+    "eb5759d07513e4ba1cd2be16263ec6833f3e2d74": "46dd242581c2300a56de1d3f59d4b6ad53bd7fcb"
+  }
+}

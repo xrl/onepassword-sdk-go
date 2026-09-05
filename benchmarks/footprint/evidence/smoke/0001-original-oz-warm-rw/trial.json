@@ -1,0 +1,53 @@
+{
+  "cell": "original-oz:warm-rw",
+  "phase": "measured",
+  "round": 0,
+  "id": "0001-original-oz-warm-rw",
+  "invalid_reasons": [],
+  "exit_code": 0,
+  "cache_certainty": "unknown-public-api-no-hit-signal",
+  "cache_before": {
+    "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+      "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+      "bytes": 22063
+    },
+    "wazero-v1.11.0-arm64-darwin/9c993068e9855878f863c7a4b2fd96b0b3a1eed1e19236ff4a60685d6c0c14ee": {
+      "sha256": "f9537387c7e0f25540c8c26af0c9c5bd5ea1231143ff7148cd06c8fbc5dd42e9",
+      "bytes": 23439191
+    }
+  },
+  "cache_after": {
+    "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+      "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+      "bytes": 22063
+    },
+    "wazero-v1.11.0-arm64-darwin/9c993068e9855878f863c7a4b2fd96b0b3a1eed1e19236ff4a60685d6c0c14ee": {
+      "sha256": "f9537387c7e0f25540c8c26af0c9c5bd5ea1231143ff7148cd06c8fbc5dd42e9",
+      "bytes": 23439191
+    }
+  },
+  "metrics": {
+    "process_peak_bytes": 69156864,
+    "core-ready_heap_alloc_bytes": 14378624,
+    "core-ready_rss_bytes": 61390848,
+    "core-ready_main_pages": 62,
+    "core-ready_kernel_pages": 16,
+    "core-ready_operation_ns": 65739042,
+    "settled_heap_alloc_bytes": 21203240,
+    "settled_rss_bytes": 69156864,
+    "settled_main_pages": 63,
+    "settled_kernel_pages": 16,
+    "settled_operation_ns": 0,
+    "closed_heap_alloc_bytes": 21245912,
+    "closed_rss_bytes": 69189632,
+    "closed_main_pages": 0,
+    "closed_kernel_pages": 0,
+    "closed_operation_ns": 29875,
+    "cache_bytes": 23461254
+  },
+  "raw_sha256": {
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command.json": "a612a3aaebb214e6910ff2a404814924189423613da457742237ab3cf307fda9",
+    "stdout.jsonl": "efb5c7a09e1efe073fb941fc460b447521cc96d167b255a47b535f2aa465d2be"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "host": {
+    "platform": "Linux-6.12.47+rpt-rpi-2712-aarch64-with-glibc2.41",
+    "uname": [
+      "Linux",
+      "benchmark-host",
+      "6.12.47+rpt-rpi-2712",
+      "#1 SMP PREEMPT Debian 1:6.12.47-1+rpt1 (2025-09-16)",
+      "aarch64",
+      ""
+    ],
+    "cpu_count": 4,
+    "page_bytes": 16384,
+    "load": [
+      0.31787109375,
+      1.24365234375,
+      1.310546875
+    ],
+    "/proc/meminfo": "MemTotal:        8256512 kB\nMemFree:          342640 kB\nMemAvailable:    3591568 kB\nBuffers:          620608 kB\nCached:          2542096 kB\nSwapCached:          432 kB\nActive:          3364336 kB\nInactive:        3780400 kB\nActive(anon):    2631792 kB\nInactive(anon):  1525008 kB\nActive(file):     732544 kB\nInactive(file):  2255392 kB\nUnevictable:        1136 kB\nMlocked:               0 kB\nSwapTotal:       2097136 kB\nSwapFree:        1982080 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               560 kB\nWriteback:             0 kB\nAnonPages:       3983360 kB\nMapped:          1204288 kB\nShmem:            175264 kB\nKReclaimable:     350976 kB\nSlab:             530784 kB\nSReclaimable:     350976 kB\nSUnreclaim:       179808 kB\nKernelStack:       14112 kB\nPageTables:        24976 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     6225392 kB\nCommitted_AS:    9650608 kB\nVmallocTotal:   68447887360 kB\nVmallocUsed:       72096 kB\nVmallocChunk:          0 kB\nPercpu:            13056 kB\nCmaTotal:          65536 kB\nCmaFree:              48 kB\n",
+    "/proc/cpuinfo": "processor\t: 0\nBogoMIPS\t: 108.00\nFeatures\t: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp\nCPU implementer\t: 0x41\nCPU architecture: 8\nCPU variant\t: 0x4\nCPU part\t: 0xd0b\nCPU revision\t: 1\n\nprocessor\t: 1\nBogoMIPS\t: 108.00\nFeatures\t: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp\nCPU implementer\t: 0x41\nCPU architecture: 8\nCPU variant\t: 0x4\nCPU part\t: 0xd0b\nCPU revision\t: 1\n\nprocessor\t: 2\nBogoMIPS\t: 108.00\nFeatures\t: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp\nCPU implementer\t: 0x41\nCPU architecture: 8\nCPU variant\t: 0x4\nCPU part\t: 0xd0b\nCPU revision\t: 1\n\nprocessor\t: 3\nBogoMIPS\t: 108.00\nFeatures\t: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp\nCPU implementer\t: 0x41\nCPU architecture: 8\nCPU variant\t: 0x4\nCPU part\t: 0xd0b\nCPU revision\t: 1\n\nRevision\t: d04170\nModel\t\t: Raspberry Pi 5 Model B Rev 1.0\n",
+    "/proc/swaps": "Filename\t\t\t\tType\t\tSize\t\tUsed\t\tPriority\n/dev/zram0                              partition\t2097136\t\t115056\t\t100\n",
+    "page_cache_protocol": "Uncontrolled host cache; no purge. Per-cell fresh directory, warm population reads whole cache files to hash them before trial. Anonymous executable mappings remain separate from file cache."
+  },
+  "builds": {
+    "original": {
+      "source_sha256": {
+        "go.mod": "eb3eb350c6fb9399c276b3c2189e3b478bb32c29e4483bb428e1325a34c3fd86",
+        "go.sum": "3c0a04debbaad23bd76ad03f7c4b334e00900f56daeca75116d80546f6c622f0",
+        "internal/footprint_benchmark.go": "23e6d94dc653821e953f3a9ff8422f1a8253f698f1ffa17e23ec8b529169c5a2",
+        "benchmarks/footprint/build.py": "3bd0ae32b86ed550db62e6e7edbdcf530bed23ac08df5fb85a2c50dfb0023074",
+        "benchmarks/footprint/cmd/probe/main.go": "a495ed5d8c21c617bb32b1556ef3c795c280ab8f4fd3f3bf5133c00da178d895",
+        "benchmarks/footprint/cmd/probe/main_test.go": "02d740ca241de637c17fe43bb2bd52cd74258ca80b1b5437ec47a36c629a00e3",
+        "benchmarks/footprint/cmd/probe/metrics.go": "20aaef7d5cf293b6add86d8afffc32571ede680b39252941f5de73d296548d62",
+        "benchmarks/footprint/cmd/probe/rss_darwin.go": "676899737eeaaf9172c2e8dc8593202adb87ed50c594f9e255201f4a3c6e0cd3",
+        "benchmarks/footprint/cmd/probe/rss_linux.go": "74a51bbc2aeab98b57b99c6e14a54bb66a8ad77db2cc199992e0c277f52edd3d"
+      },
+      "command": [
+        "go",
+        "build",
+        "-modfile=/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/linux-campaign/original/bench.mod",
+        "-trimpath",
+        "-pgo=off",
+        "-tags=footprint",
+        "-overlay=/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/linux-campaign/original/overlay.json",
+        "-o",
+        "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/linux-campaign/original/probe",
+        "./benchmarks/footprint/cmd/probe"
+      ],
+      "environment": {
+        "CGO_ENABLED": "0",
+        "GOOS": "linux",
+        "GOARCH": "arm64",
+        "GOPROXY": "off",
+        "GOTOOLCHAIN": "local",
+        "GOFLAGS": "",
+        "GOAMD64": "v1",
+        "GOARM64": "v8.0",
+        "GOEXPERIMENT": ""
+      },
+      "go": "go version go1.27.1 darwin/arm64",
+      "commit": "ca21b38cd6c4359d1898a30b79c771e9b7ce52ff",
+      "dirty": "",
+      "artifact_sha256": "23d115f4ac7519b48172df3e8615945572dbda7033d51b44c9490fd533ae0f23",
+      "artifact_bytes": 9509477,
+      "binary_sha256": "5d5d9c508bd3b8cbca8e7f39a2c7f160504ad6fc7bb91bb5ec5d6672f360be5d",
+      "extism_module_original_sha256": "32dc5975297e2714f06c703afed6d2267b1c457ccbd6e03489677292bcf8d039",
+      "sdk_loader_original_sha256": "5699466b3ee35f78ef2d82d7b25da867408298d135fda7a116eeb5f71995f4c8",
+      "overlay_sources": {
+        "module.go": "0aee946177fde4ad23a2fdb792dc699f8b33eb07b6bd6120967f57da55d621f3",
+        "extism_core.go": "200eb6a8cba8d178dcf0e3aba6edced46bdf432b1bceadb65d8fb297e1346aca",
+        "overlay.json": "79eb58f4ff8e004ea30e196637514fd2249ffee689f47d1eaecec6b3ac57aa44",
+        "bench.mod": "56747ee5e9d4fe19bf64f44b3c439ac6be4f37d70218e7883ae3c4fcfa81b424",
+        "bench.sum": "3c0a04debbaad23bd76ad03f7c4b334e00900f56daeca75116d80546f6c622f0",
+        "dependency-digests.json": "f2f5fbb6d4fbd90457277c2c04a4089dfe9e7102a2568e45cc252e3d504e7678"
+      },
+      "dependencies": "github.com/1password/onepassword-sdk-go\ngithub.com/cenkalti/backoff/v4 v4.3.0\ngithub.com/davecgh/go-spew v1.1.1\ngithub.com/dylibso/observe-sdk/go v0.0.0-20240828172851-9145d8ad07e1\ngithub.com/extism/go-sdk v1.7.1\ngithub.com/go-logr/logr v1.4.2\ngithub.com/go-logr/stdr v1.2.2\ngithub.com/gobwas/glob v0.2.3\ngithub.com/golang/protobuf v1.5.4\ngithub.com/google/go-cmp v0.7.0\ngithub.com/google/uuid v1.6.0\ngithub.com/grpc-ecosystem/grpc-gateway/v2 v2.27.2\ngithub.com/ianlancetaylor/demangle v0.0.0-20251118225945-96ee0021ea0f\ngithub.com/pmezard/go-difflib v1.0.0\ngithub.com/stretchr/objx v0.5.2\ngithub.com/stretchr/testify v1.11.1\ngithub.com/tetratelabs/wabin v0.0.0-20230304001439-f6f874872834\ngithub.com/tetratelabs/wazero v1.11.0\ngo.opentelemetry.io/otel v1.28.0\ngo.opentelemetry.io/otel/exporters/otlp/otlptrace v1.28.0\ngo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.28.0\ngo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.28.0\ngo.opentelemetry.io/otel/metric v1.28.0\ngo.opentelemetry.io/otel/sdk v1.28.0\ngo.opentelemetry.io/otel/trace v1.28.0\ngo.opentelemetry.io/proto/otlp v1.9.0\ngolang.org/x/net v0.43.0\ngolang.org/x/sys v0.40.0\ngolang.org/x/text v0.28.0\ngoogle.golang.org/genproto/googleapis/api v0.0.0-20250825161204-c5933d9347a5\ngoogle.golang.org/genproto/googleapis/rpc v0.0.0-20250825161204-c5933d9347a5\ngoogle.golang.org/grpc v1.75.1\ngoogle.golang.org/protobuf v1.36.11\ngopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405\ngopkg.in/yaml.v3 v3.0.1",
+      "build_info": "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/linux-campaign/original/probe: go1.27.1\n\tpath\tgithub.com/1password/onepassword-sdk-go/benchmarks/footprint/cmd/probe\n\tmod\tgithub.com/1password/onepassword-sdk-go\tv0.4.2-0.20260904231317-ca21b38cd6c4\t\n\tdep\tgithub.com/dylibso/observe-sdk/go\tv0.0.0-20240828172851-9145d8ad07e1\th1:idfl8M8rPW93NehFw5H1qqH8yG158t5POr+LX9avbJY=\n\tdep\tgithub.com/extism/go-sdk\tv1.7.1\n\t=>\t/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/linux-campaign/original/extism\t(devel)\t\n\t\n\tdep\tgithub.com/gobwas/glob\tv0.2.3\th1:A4xDbljILXROh+kObIiy5kIaPYD8e96x1tgBhUI5J+Y=\n\tdep\tgithub.com/ianlancetaylor/demangle\tv0.0.0-20251118225945-96ee0021ea0f\th1:Fnl4pzx8SR7k7JuzyW8lEtSFH6EQ8xgcypgIn8pcGIE=\n\tdep\tgithub.com/tetratelabs/wabin\tv0.0.0-20230304001439-f6f874872834\th1:ZF+QBjOI+tILZjBaFj3HgFonKXUcwgJ4djLb6i42S3Q=\n\tdep\tgithub.com/tetratelabs/wazero\tv1.11.0\th1:+gKemEuKCTevU4d7ZTzlsvgd1uaToIDtlQlmNbwqYhA=\n\tdep\tgo.opentelemetry.io/proto/otlp\tv1.9.0\th1:l706jCMITVouPOqEnii2fIAuO3IVGBRPV5ICjceRb/A=\n\tdep\tgolang.org/x/sys\tv0.40.0\th1:DBZZqJ2Rkml6QMQsZywtnjnnGvHza6BTfYFWY9kjEWQ=\n\tdep\tgoogle.golang.org/protobuf\tv1.36.11\th1:fV6ZwhNocDyBLK0dj+fg8ektcVegBBuEolpbTQyBNVE=\n\tbuild\t-buildmode=exe\n\tbuild\t-compiler=gc\n\tbuild\t-tags=footprint\n\tbuild\t-trimpath=true\n\tbuild\tDefaultGODEBUG=containermaxprocs=0,cryptocustomrand=1,decoratemappings=0,tlssecpmlkem=0,tlssha1=1,tracebacklabels=0,updatemaxprocs=0,urlstrictcolons=0,x509sha256skid=0,x509sslcertoverrideplatform=0\n\tbuild\tCGO_ENABLED=0\n\tbuild\tGOARCH=arm64\n\tbuild\tGOOS=linux\n\tbuild\tGOARM64=v8.0\n\tbuild\tvcs=git\n\tbuild\tvcs.revision=ca21b38cd6c4359d1898a30b79c771e9b7ce52ff\n\tbuild\tvcs.time=2026-09-04T23:13:17Z\n\tbuild\tvcs.modified=false"
+    },
+    "stale": {
+      "source_sha256": {
+        "go.mod": "eb3eb350c6fb9399c276b3c2189e3b478bb32c29e4483bb428e1325a34c3fd86",
+        "go.sum": "3c0a04debbaad23bd76ad03f7c4b334e00900f56daeca75116d80546f6c622f0",
+        "internal/footprint_benchmark.go": "23e6d94dc653821e953f3a9ff8422f1a8253f698f1ffa17e23ec8b529169c5a2",
+        "benchmarks/footprint/build.py": "3bd0ae32b86ed550db62e6e7edbdcf530bed23ac08df5fb85a2c50dfb0023074",
+        "benchmarks/footprint/cmd/probe/main.go": "a495ed5d8c21c617bb32b1556ef3c795c280ab8f4fd3f3bf5133c00da178d895",
+        "benchmarks/footprint/cmd/probe/main_test.go": "02d740ca241de637c17fe43bb2bd52cd74258ca80b1b5437ec47a36c629a00e3",
+        "benchmarks/footprint/cmd/probe/metrics.go": "20aaef7d5cf293b6add86d8afffc32571ede680b39252941f5de73d296548d62",
+        "benchmarks/footprint/cmd/probe/rss_darwin.go": "676899737eeaaf9172c2e8dc8593202adb87ed50c594f9e255201f4a3c6e0cd3",
+        "benchmarks/footprint/cmd/probe/rss_linux.go": "74a51bbc2aeab98b57b99c6e14a54bb66a8ad77db2cc199992e0c277f52edd3d"
+      },
+      "command": [
+        "go",
+        "build",
+        "-modfile=/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/linux-campaign/prune-only/bench.mod",
+        "-trimpath",
+        "-pgo=off",
+        "-tags=footprint",
+        "-overlay=/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/linux-campaign/prune-only/overlay.json",
+        "-o",
+        "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/linux-campaign/prune-only/probe",
+        "./benchmarks/footprint/cmd/probe"
+      ],
+      "environment": {
+        "CGO_ENABLED": "0",
+        "GOOS": "linux",
+        "GOARCH": "arm64",
+        "GOPROXY": "off",
+        "GOTOOLCHAIN": "local",
+        "GOFLAGS": "",
+        "GOAMD64": "v1",
+        "GOARM64": "v8.0",
+        "GOEXPERIMENT": ""
+      },
+      "go": "go version go1.27.1 darwin/arm64",
+      "commit": "ca21b38cd6c4359d1898a30b79c771e9b7ce52ff",
+      "dirty": "",
+      "artifact_sha256": "d3f2ef3068e8fb8230e3c61da80a5b4cac0a0e8ade10dd4a77cf5632fa03e408",
+      "artifact_bytes": 9411364,
+      "binary_sha256": "e3d59b83a7887f659652dd1d08e764aa479527e445f0da81ffec17fb951298b8",
+      "extism_module_original_sha256": "32dc5975297e2714f06c703afed6d2267b1c457ccbd6e03489677292bcf8d039",
+      "sdk_loader_original_sha256": "5699466b3ee35f78ef2d82d7b25da867408298d135fda7a116eeb5f71995f4c8",
+      "overlay_sources": {
+        "module.go": "0aee946177fde4ad23a2fdb792dc699f8b33eb07b6bd6120967f57da55d621f3",
+        "extism_core.go": "200eb6a8cba8d178dcf0e3aba6edced46bdf432b1bceadb65d8fb297e1346aca",
+        "overlay.json": "695180fecab55dc93df2f0a0bf0ad2cf14fc5dd9cd55f42509eeebfee7f7910e",
+        "bench.mod": "5e6994899d101b74fc4403c424c36398c4b22f4ef271b3c140c4593a69e52638",
+        "bench.sum": "3c0a04debbaad23bd76ad03f7c4b334e00900f56daeca75116d80546f6c622f0",
+        "dependency-digests.json": "f2f5fbb6d4fbd90457277c2c04a4089dfe9e7102a2568e45cc252e3d504e7678"
+      },
+      "dependencies": "github.com/1password/onepassword-sdk-go\ngithub.com/cenkalti/backoff/v4 v4.3.0\ngithub.com/davecgh/go-spew v1.1.1\ngithub.com/dylibso/observe-sdk/go v0.0.0-20240828172851-9145d8ad07e1\ngithub.com/extism/go-sdk v1.7.1\ngithub.com/go-logr/logr v1.4.2\ngithub.com/go-logr/stdr v1.2.2\ngithub.com/gobwas/glob v0.2.3\ngithub.com/golang/protobuf v1.5.4\ngithub.com/google/go-cmp v0.7.0\ngithub.com/google/uuid v1.6.0\ngithub.com/grpc-ecosystem/grpc-gateway/v2 v2.27.2\ngithub.com/ianlancetaylor/demangle v0.0.0-20251118225945-96ee0021ea0f\ngithub.com/pmezard/go-difflib v1.0.0\ngithub.com/stretchr/objx v0.5.2\ngithub.com/stretchr/testify v1.11.1\ngithub.com/tetratelabs/wabin v0.0.0-20230304001439-f6f874872834\ngithub.com/tetratelabs/wazero v1.11.0\ngo.opentelemetry.io/otel v1.28.0\ngo.opentelemetry.io/otel/exporters/otlp/otlptrace v1.28.0\ngo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.28.0\ngo.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.28.0\ngo.opentelemetry.io/otel/metric v1.28.0\ngo.opentelemetry.io/otel/sdk v1.28.0\ngo.opentelemetry.io/otel/trace v1.28.0\ngo.opentelemetry.io/proto/otlp v1.9.0\ngolang.org/x/net v0.43.0\ngolang.org/x/sys v0.40.0\ngolang.org/x/text v0.28.0\ngoogle.golang.org/genproto/googleapis/api v0.0.0-20250825161204-c5933d9347a5\ngoogle.golang.org/genproto/googleapis/rpc v0.0.0-20250825161204-c5933d9347a5\ngoogle.golang.org/grpc v1.75.1\ngoogle.golang.org/protobuf v1.36.11\ngopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405\ngopkg.in/yaml.v3 v3.0.1",
+      "build_info": "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/linux-campaign/prune-only/probe: go1.27.1\n\tpath\tgithub.com/1password/onepassword-sdk-go/benchmarks/footprint/cmd/probe\n\tmod\tgithub.com/1password/onepassword-sdk-go\tv0.4.2-0.20260904231317-ca21b38cd6c4\t\n\tdep\tgithub.com/dylibso/observe-sdk/go\tv0.0.0-20240828172851-9145d8ad07e1\th1:idfl8M8rPW93NehFw5H1qqH8yG158t5POr+LX9avbJY=\n\tdep\tgithub.com/extism/go-sdk\tv1.7.1\n\t=>\t/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/linux-campaign/prune-only/extism\t(devel)\t\n\t\n\tdep\tgithub.com/gobwas/glob\tv0.2.3\th1:A4xDbljILXROh+kObIiy5kIaPYD8e96x1tgBhUI5J+Y=\n\tdep\tgithub.com/ianlancetaylor/demangle\tv0.0.0-20251118225945-96ee0021ea0f\th1:Fnl4pzx8SR7k7JuzyW8lEtSFH6EQ8xgcypgIn8pcGIE=\n\tdep\tgithub.com/tetratelabs/wabin\tv0.0.0-20230304001439-f6f874872834\th1:ZF+QBjOI+tILZjBaFj3HgFonKXUcwgJ4djLb6i42S3Q=\n\tdep\tgithub.com/tetratelabs/wazero\tv1.11.0\th1:+gKemEuKCTevU4d7ZTzlsvgd1uaToIDtlQlmNbwqYhA=\n\tdep\tgo.opentelemetry.io/proto/otlp\tv1.9.0\th1:l706jCMITVouPOqEnii2fIAuO3IVGBRPV5ICjceRb/A=\n\tdep\tgolang.org/x/sys\tv0.40.0\th1:DBZZqJ2Rkml6QMQsZywtnjnnGvHza6BTfYFWY9kjEWQ=\n\tdep\tgoogle.golang.org/protobuf\tv1.36.11\th1:fV6ZwhNocDyBLK0dj+fg8ektcVegBBuEolpbTQyBNVE=\n\tbuild\t-buildmode=exe\n\tbuild\t-compiler=gc\n\tbuild\t-tags=footprint\n\tbuild\t-trimpath=true\n\tbuild\tDefaultGODEBUG=containermaxprocs=0,cryptocustomrand=1,decoratemappings=0,tlssecpmlkem=0,tlssha1=1,tracebacklabels=0,updatemaxprocs=0,urlstrictcolons=0,x509sha256skid=0,x509sslcertoverrideplatform=0\n\tbuild\tCGO_ENABLED=0\n\tbuild\tGOARCH=arm64\n\tbuild\tGOOS=linux\n\tbuild\tGOARM64=v8.0\n\tbuild\tvcs=git\n\tbuild\tvcs.revision=ca21b38cd6c4359d1898a30b79c771e9b7ce52ff\n\tbuild\tvcs.time=2026-09-04T23:13:17Z\n\tbuild\tvcs.modified=false"
+    }
+  },
+  "source_sha256": {
+    "cache_failures.py": "9380dce3a1a23e566afd720f8fa0fe538142c4f811823647e8795a40eec60ab0",
+    "controller.py": "6d0507db58de165fae51de226e64f7454c8ba0097d66bbf26b26b4ac9da54eb9",
+    "linux_trial.py": "b43cac1773d933c722a51bdf00aee3977a812b0658b97ea2e68c21c3d70a5876"
+  },
+  "cases": [
+    "missing-core-entry",
+    "different-core",
+    "truncated-core-entry"
+  ]
+}

@@ -1,0 +1,15 @@
+1	nocache	163069952	heap_alloc=16734296 heap_sys=116948992 heap_released=5349376 sys=125692200
+1	cache_cold	190005248	heap_alloc=16702096 heap_sys=142147584 heap_released=3547136 sys=151398696
+1	cache_warm	67567616	heap_alloc=16691616 heap_sys=20611072 heap_released=2195456 sys=27793688
+2	nocache	162709504	heap_alloc=16735096 heap_sys=116981760 heap_released=5480448 sys=126216488
+2	cache_cold	189612032	heap_alloc=16696888 heap_sys=142180352 heap_released=3956736 sys=151152936
+2	cache_warm	67518464	heap_alloc=16696920 heap_sys=24772608 heap_released=6365184 sys=31709464
+3	nocache	165117952	heap_alloc=16701840 heap_sys=116981760 heap_released=3219456 sys=125430056
+3	cache_cold	187564032	heap_alloc=16702304 heap_sys=142213120 heap_released=8011776 sys=151365928
+3	cache_warm	67502080	heap_alloc=16696632 heap_sys=20578304 heap_released=2146304 sys=27445512
+4	nocache	164036608	heap_alloc=16707624 heap_sys=121143296 heap_released=8609792 sys=130427176
+4	cache_cold	190857216	heap_alloc=16708072 heap_sys=142114816 heap_released=3014656 sys=151103784
+4	cache_warm	67551232	heap_alloc=16697144 heap_sys=24772608 heap_released=6430720 sys=31639816
+5	nocache	164200448	heap_alloc=16739952 heap_sys=116916224 heap_released=4317184 sys=125954344
+5	cache_cold	190627840	heap_alloc=16740048 heap_sys=146309120 heap_released=6987776 sys=155560232
+5	cache_warm	67485696	heap_alloc=16719264 heap_sys=20611072 heap_released=2138112 sys=27707656

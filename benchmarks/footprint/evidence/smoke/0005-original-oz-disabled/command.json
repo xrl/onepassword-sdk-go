@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-footprint/benchmarks/footprint/generated/final/original-oz/probe",
+    "--calls=2",
+    "--settle=0",
+    "--input-bytes=64",
+    "--diagnostic=none"
+  ],
+  "GOMEMLIMIT": "off",
+  "GOGC": "100",
+  "start_ns": 1788562626410779000
+}

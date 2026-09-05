@@ -1,0 +1,93 @@
+{
+  "campaign_source_snapshots": {
+    "controller": {
+      "path": "artifacts/built-sources/controller/run.py",
+      "sha256": "64cc9302d5db45475ca8c1951c70f4a96a2a93483ebbfb24bfb0375b318b4230"
+    },
+    "driver": {
+      "path": "artifacts/built-sources/cmd/coremem/main.go",
+      "sha256": "346222cdeb0ae3927db5992d83e377b735f67007aa5facdd4f56ec22cfc9edec"
+    }
+  },
+  "canonical": {
+    "analyzer": "3578521d932904043b5fd4c5b322ea4d9aea6594f3276f835dc88368535f8708",
+    "controller": "64cc9302d5db45475ca8c1951c70f4a96a2a93483ebbfb24bfb0375b318b4230",
+    "driver": "346222cdeb0ae3927db5992d83e377b735f67007aa5facdd4f56ec22cfc9edec",
+    "go.mod": "0cd1c02827a09a0d29e29590a5fef372247effc0e967b932d8b99f8f0e545392",
+    "go.sum": "3c0a04debbaad23bd76ad03f7c4b334e00900f56daeca75116d80546f6c622f0",
+    "supplement": "a992fc6d96f82809bf884eb9cc26eb3bd8fb3559387eb607d85d62f90cabe25e",
+    "validator": "7732b0aad06d098f13bd76eaaa00bcac1ac6be7faa6ccc5291af40cae82229ad"
+  },
+  "created_utc": "2026-09-04T06:55:03.698703+00:00",
+  "post_review_sources": {
+    "analyzer": {
+      "path": "controller/analyze.py",
+      "sha256": "3578521d932904043b5fd4c5b322ea4d9aea6594f3276f835dc88368535f8708"
+    },
+    "controller": {
+      "path": "controller/run.py",
+      "sha256": "6e7a153ab86c8564ae2a189eeec2a5e6d674586e0726371445fa3e7e524f55e9"
+    },
+    "controller_tests": {
+      "path": "controller/test_run.py",
+      "sha256": "4c1de4e4a24bc6163eaa9d043e477bef4f6fdd5e4ac7eebc23c214d4b92d70a4"
+    },
+    "driver": {
+      "path": "cmd/coremem/main.go",
+      "sha256": "dbc9a9cf286e1038d6f79c523ca8e5d144e90270e257997cd7c8141794f83d52"
+    },
+    "driver_tests": {
+      "path": "cmd/coremem/main_test.go",
+      "sha256": "e05a2db97ee5574ea7948e9111f3f6ce2cba74833e86ce581f927ce5ee1ae1aa"
+    },
+    "supplement": {
+      "path": "controller/supplement.py",
+      "sha256": "a992fc6d96f82809bf884eb9cc26eb3bd8fb3559387eb607d85d62f90cabe25e"
+    },
+    "validator": {
+      "path": "controller/validate.py",
+      "sha256": "7732b0aad06d098f13bd76eaaa00bcac1ac6be7faa6ccc5291af40cae82229ad"
+    }
+  },
+  "protocol_version": "op-go-extism-core-memory/v1",
+  "source_input_hashes": {
+    "A": {
+      "go.mod": "eb3eb350c6fb9399c276b3c2189e3b478bb32c29e4483bb428e1325a34c3fd86",
+      "go.sum": "3c0a04debbaad23bd76ad03f7c4b334e00900f56daeca75116d80546f6c622f0",
+      "wasm": "23d115f4ac7519b48172df3e8615945572dbda7033d51b44c9490fd533ae0f23"
+    },
+    "B": {
+      "go.mod": "eb3eb350c6fb9399c276b3c2189e3b478bb32c29e4483bb428e1325a34c3fd86",
+      "go.sum": "3c0a04debbaad23bd76ad03f7c4b334e00900f56daeca75116d80546f6c622f0",
+      "wasm": "23d115f4ac7519b48172df3e8615945572dbda7033d51b44c9490fd533ae0f23"
+    }
+  },
+  "toolchain": {
+    "path": "/opt/homebrew/bin/go",
+    "sha256": "548608a910c46de32c65a3934f461b1787acf6ddd371044826068d8503b8509b",
+    "version": "go version go1.27.1 darwin/arm64"
+  },
+  "variants": {
+    "A": {
+      "binary": "/Users/xavier/code/dekopon/onepassword-sdk-go-memory-benchmark/bin/A",
+      "binary_sha256": "ffc7be2f9d2aadc0ab58f967fd2d67003872527ac8d5d34e6bb484615ed6872c",
+      "build_command": "CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 GOTOOLCHAIN=local GOPROXY=off GOCACHE=/Users/xavier/code/dekopon/onepassword-sdk-go-memory-benchmark/build-cache/A /opt/homebrew/bin/go build -mod=readonly -trimpath -pgo=off -buildvcs=false -o /Users/xavier/code/dekopon/onepassword-sdk-go-memory-benchmark/bin/A ./cmd/coremem",
+      "commit": "5866f43111ffeee5952e43a13da1aafef98200c8",
+      "go_version_m": "/Users/xavier/code/dekopon/onepassword-sdk-go-memory-benchmark/bin/A: go1.27.1\n\tpath\tgithub.com/1password/onepassword-sdk-go/benchdriver/cmd/coremem\n\tmod\tgithub.com/1password/onepassword-sdk-go/benchdriver\t(devel)\t\n\tdep\tgithub.com/1password/onepassword-sdk-go\tv0.0.0\n\t=>\t./sdk\t(devel)\t\n\t\n\tdep\tgithub.com/dylibso/observe-sdk/go\tv0.0.0-20240828172851-9145d8ad07e1\th1:idfl8M8rPW93NehFw5H1qqH8yG158t5POr+LX9avbJY=\n\tdep\tgithub.com/extism/go-sdk\tv1.7.1\th1:lWJos6uY+tRFdlIHR+SJjwFDApY7OypS/2nMhiVQ9Sw=\n\tdep\tgithub.com/gobwas/glob\tv0.2.3\th1:A4xDbljILXROh+kObIiy5kIaPYD8e96x1tgBhUI5J+Y=\n\tdep\tgithub.com/ianlancetaylor/demangle\tv0.0.0-20251118225945-96ee0021ea0f\th1:Fnl4pzx8SR7k7JuzyW8lEtSFH6EQ8xgcypgIn8pcGIE=\n\tdep\tgithub.com/tetratelabs/wabin\tv0.0.0-20230304001439-f6f874872834\th1:ZF+QBjOI+tILZjBaFj3HgFonKXUcwgJ4djLb6i42S3Q=\n\tdep\tgithub.com/tetratelabs/wazero\tv1.11.0\th1:+gKemEuKCTevU4d7ZTzlsvgd1uaToIDtlQlmNbwqYhA=\n\tdep\tgo.opentelemetry.io/proto/otlp\tv1.9.0\th1:l706jCMITVouPOqEnii2fIAuO3IVGBRPV5ICjceRb/A=\n\tdep\tgolang.org/x/sys\tv0.40.0\th1:DBZZqJ2Rkml6QMQsZywtnjnnGvHza6BTfYFWY9kjEWQ=\n\tdep\tgoogle.golang.org/protobuf\tv1.36.11\th1:fV6ZwhNocDyBLK0dj+fg8ektcVegBBuEolpbTQyBNVE=\n\tbuild\t-buildmode=exe\n\tbuild\t-compiler=gc\n\tbuild\t-trimpath=true\n\tbuild\tCGO_ENABLED=0\n\tbuild\tGOARCH=arm64\n\tbuild\tGOOS=darwin\n\tbuild\tGOARM64=v8.0",
+      "source_path": "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-memory-base",
+      "status_porcelain": "",
+      "symlink_target_used": "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-memory-base"
+    },
+    "B": {
+      "binary": "/Users/xavier/code/dekopon/onepassword-sdk-go-memory-benchmark/bin/B",
+      "binary_sha256": "b12d4e33e441a0f3e5af389f510178350e31b59e55e894a143293cac2dc0dde9",
+      "build_command": "CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 GOTOOLCHAIN=local GOPROXY=off GOCACHE=/Users/xavier/code/dekopon/onepassword-sdk-go-memory-benchmark/build-cache/B /opt/homebrew/bin/go build -mod=readonly -trimpath -pgo=off -buildvcs=false -o /Users/xavier/code/dekopon/onepassword-sdk-go-memory-benchmark/bin/B ./cmd/coremem",
+      "commit": "da768afd327a9393e7bb8033d0d3fa01f9e999fd",
+      "go_version_m": "/Users/xavier/code/dekopon/onepassword-sdk-go-memory-benchmark/bin/B: go1.27.1\n\tpath\tgithub.com/1password/onepassword-sdk-go/benchdriver/cmd/coremem\n\tmod\tgithub.com/1password/onepassword-sdk-go/benchdriver\t(devel)\t\n\tdep\tgithub.com/1password/onepassword-sdk-go\tv0.0.0\n\t=>\t./sdk\t(devel)\t\n\t\n\tdep\tgithub.com/dylibso/observe-sdk/go\tv0.0.0-20240828172851-9145d8ad07e1\th1:idfl8M8rPW93NehFw5H1qqH8yG158t5POr+LX9avbJY=\n\tdep\tgithub.com/extism/go-sdk\tv1.7.1\th1:lWJos6uY+tRFdlIHR+SJjwFDApY7OypS/2nMhiVQ9Sw=\n\tdep\tgithub.com/gobwas/glob\tv0.2.3\th1:A4xDbljILXROh+kObIiy5kIaPYD8e96x1tgBhUI5J+Y=\n\tdep\tgithub.com/ianlancetaylor/demangle\tv0.0.0-20251118225945-96ee0021ea0f\th1:Fnl4pzx8SR7k7JuzyW8lEtSFH6EQ8xgcypgIn8pcGIE=\n\tdep\tgithub.com/tetratelabs/wabin\tv0.0.0-20230304001439-f6f874872834\th1:ZF+QBjOI+tILZjBaFj3HgFonKXUcwgJ4djLb6i42S3Q=\n\tdep\tgithub.com/tetratelabs/wazero\tv1.11.0\th1:+gKemEuKCTevU4d7ZTzlsvgd1uaToIDtlQlmNbwqYhA=\n\tdep\tgo.opentelemetry.io/proto/otlp\tv1.9.0\th1:l706jCMITVouPOqEnii2fIAuO3IVGBRPV5ICjceRb/A=\n\tdep\tgolang.org/x/sys\tv0.40.0\th1:DBZZqJ2Rkml6QMQsZywtnjnnGvHza6BTfYFWY9kjEWQ=\n\tdep\tgoogle.golang.org/protobuf\tv1.36.11\th1:fV6ZwhNocDyBLK0dj+fg8ektcVegBBuEolpbTQyBNVE=\n\tbuild\t-buildmode=exe\n\tbuild\t-compiler=gc\n\tbuild\t-trimpath=true\n\tbuild\tCGO_ENABLED=0\n\tbuild\tGOARCH=arm64\n\tbuild\tGOOS=darwin\n\tbuild\tGOARM64=v8.0",
+      "source_path": "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-memory-fix",
+      "status_porcelain": "",
+      "symlink_target_used": "/Users/xavier/code/dekopon/.worktrees/onepassword-sdk-go-memory-fix"
+    }
+  },
+  "wasm_sha256": "23d115f4ac7519b48172df3e8615945572dbda7033d51b44c9490fd533ae0f23"
+}

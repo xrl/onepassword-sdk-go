@@ -1,0 +1,37 @@
+[
+  {
+    "cell": "original:disabled",
+    "phase": "measured",
+    "round": 0,
+    "id": "0000-original-disabled",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "disabled",
+    "cache_before": {},
+    "cache_after": {},
+    "metrics": {
+      "process_peak_bytes": 174178304,
+      "core-ready_heap_alloc_bytes": 108434112,
+      "core-ready_rss_bytes": 164708352,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 1798398875,
+      "settled_heap_alloc_bytes": 117076568,
+      "settled_rss_bytes": 174030848,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 20640928,
+      "closed_rss_bytes": 174243840,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 27042,
+      "cache_bytes": 0
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "72926f345eb198b03786e9c271236e69f93d5ef12ebac96a17cf157c49c27cde",
+      "stdout.jsonl": "45492a4c46045754eacdb730a815fbb4eb3bd284dd0b210aefff91263bf2489d"
+    }
+  }
+]

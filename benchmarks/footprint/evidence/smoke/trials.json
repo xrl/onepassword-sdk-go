@@ -1,0 +1,794 @@
+[
+  {
+    "cell": "stripped:disabled",
+    "phase": "measured",
+    "round": 0,
+    "id": "0000-stripped-disabled",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "disabled",
+    "cache_before": {},
+    "cache_after": {},
+    "metrics": {
+      "process_peak_bytes": 169410560,
+      "core-ready_heap_alloc_bytes": 105319696,
+      "core-ready_rss_bytes": 160890880,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 1814285000,
+      "settled_heap_alloc_bytes": 112929864,
+      "settled_rss_bytes": 169394176,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 112969088,
+      "closed_rss_bytes": 169476096,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 22083,
+      "cache_bytes": 0
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "c38b778fa004ffcb7ba53e6daad53456095afbcccf11696574dd0db9eda13ca2",
+      "stdout.jsonl": "c7cd1734f36d506d3bb2eebf7e38d769cc774ab554905c665ef12e8a033580ad"
+    }
+  },
+  {
+    "cell": "original-oz:warm-rw",
+    "phase": "measured",
+    "round": 0,
+    "id": "0001-original-oz-warm-rw",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "unknown-public-api-no-hit-signal",
+    "cache_before": {
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      },
+      "wazero-v1.11.0-arm64-darwin/9c993068e9855878f863c7a4b2fd96b0b3a1eed1e19236ff4a60685d6c0c14ee": {
+        "sha256": "f9537387c7e0f25540c8c26af0c9c5bd5ea1231143ff7148cd06c8fbc5dd42e9",
+        "bytes": 23439191
+      }
+    },
+    "cache_after": {
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      },
+      "wazero-v1.11.0-arm64-darwin/9c993068e9855878f863c7a4b2fd96b0b3a1eed1e19236ff4a60685d6c0c14ee": {
+        "sha256": "f9537387c7e0f25540c8c26af0c9c5bd5ea1231143ff7148cd06c8fbc5dd42e9",
+        "bytes": 23439191
+      }
+    },
+    "metrics": {
+      "process_peak_bytes": 69156864,
+      "core-ready_heap_alloc_bytes": 14378624,
+      "core-ready_rss_bytes": 61390848,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 65739042,
+      "settled_heap_alloc_bytes": 21203240,
+      "settled_rss_bytes": 69156864,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 21245912,
+      "closed_rss_bytes": 69189632,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 29875,
+      "cache_bytes": 23461254
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "a612a3aaebb214e6910ff2a404814924189423613da457742237ab3cf307fda9",
+      "stdout.jsonl": "efb5c7a09e1efe073fb941fc460b447521cc96d167b255a47b535f2aa465d2be"
+    }
+  },
+  {
+    "cell": "prune-oz:empty",
+    "phase": "measured",
+    "round": 0,
+    "id": "0002-prune-oz-empty",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "fresh-writable-population",
+    "cache_before": {},
+    "cache_after": {
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      },
+      "wazero-v1.11.0-arm64-darwin/f83dfff2c3e698d094130254f0ad4d5dc9b534a9539595bee6df5aa8c7e8ed44": {
+        "sha256": "43e6206614673abbb9a3747ac555c582ab56f4945b6cfbd0d3e756a333fe37be",
+        "bytes": 23439087
+      }
+    },
+    "metrics": {
+      "process_peak_bytes": 301776896,
+      "core-ready_heap_alloc_bytes": 240402368,
+      "core-ready_rss_bytes": 294109184,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 1944612791,
+      "settled_heap_alloc_bytes": 247128704,
+      "settled_rss_bytes": 301776896,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 247169904,
+      "closed_rss_bytes": 301776896,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 52917,
+      "cache_bytes": 23461150
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "99264145ef86b52afb65b6bf7c2bda71665309d60bf1b0466e8e0f88f810f851",
+      "stdout.jsonl": "d16793d2825ca3e04648926ca8ff3013b165940fbe835f300ec00afb57ef72a5"
+    }
+  },
+  {
+    "cell": "original:warm-rw",
+    "phase": "measured",
+    "round": 0,
+    "id": "0003-original-warm-rw",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "unknown-public-api-no-hit-signal",
+    "cache_before": {
+      "wazero-v1.11.0-arm64-darwin/52ec3756affa756c397d6e3270a98ceca2f50913a2f9dca5400abd012fa06568": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      },
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "cache_after": {
+      "wazero-v1.11.0-arm64-darwin/52ec3756affa756c397d6e3270a98ceca2f50913a2f9dca5400abd012fa06568": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      },
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "metrics": {
+      "process_peak_bytes": 78577664,
+      "core-ready_heap_alloc_bytes": 17098968,
+      "core-ready_rss_bytes": 68829184,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 82898917,
+      "settled_heap_alloc_bytes": 25330528,
+      "settled_rss_bytes": 78577664,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 25372688,
+      "closed_rss_bytes": 78610432,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 27375,
+      "cache_bytes": 26261274
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "fbe238f267646baf583fe4c4ddbc0c136e94dafdc2c3d52e5b884aee547ac29b",
+      "stdout.jsonl": "1ce15e97cf98c5525e7db48c9d26b680833efd4c07fe14cd190d96f60fc7b22f"
+    }
+  },
+  {
+    "cell": "prune-only:warm-rw",
+    "phase": "measured",
+    "round": 0,
+    "id": "0004-prune-only-warm-rw",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "unknown-public-api-no-hit-signal",
+    "cache_before": {
+      "wazero-v1.11.0-arm64-darwin/4e6bfab5fff8d65908150f03b5c6ab273362218ad720af5878311ed478fa4b2f": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      },
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "cache_after": {
+      "wazero-v1.11.0-arm64-darwin/4e6bfab5fff8d65908150f03b5c6ab273362218ad720af5878311ed478fa4b2f": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      },
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "metrics": {
+      "process_peak_bytes": 77905920,
+      "core-ready_heap_alloc_bytes": 16586040,
+      "core-ready_rss_bytes": 67993600,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 78815791,
+      "settled_heap_alloc_bytes": 25076368,
+      "settled_rss_bytes": 77905920,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 25116072,
+      "closed_rss_bytes": 77905920,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 23083,
+      "cache_bytes": 26261274
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "81622a94b0dbb01a864ac5a6d5d25197f3d58fc34595416a3db5a17dea60ac87",
+      "stdout.jsonl": "1c1274ebd6263b869d56215884cf951e4d9074d81d94caa57a4db9a9649e74a1"
+    }
+  },
+  {
+    "cell": "original-oz:disabled",
+    "phase": "measured",
+    "round": 0,
+    "id": "0005-original-oz-disabled",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "disabled",
+    "cache_before": {},
+    "cache_after": {},
+    "metrics": {
+      "process_peak_bytes": 271335424,
+      "core-ready_heap_alloc_bytes": 210023760,
+      "core-ready_rss_bytes": 263634944,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 1928332458,
+      "settled_heap_alloc_bytes": 216849432,
+      "settled_rss_bytes": 271335424,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 216889136,
+      "closed_rss_bytes": 271335424,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 42292,
+      "cache_bytes": 0
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "85a5e5269ae4609d68831c60f927a35628b499f8d8ad34beb72854866161e3f5",
+      "stdout.jsonl": "90d3ae1c03d9f1e9f274a5b6944117fd6c261e6a475e23f4c714cde1cdfeb2af"
+    }
+  },
+  {
+    "cell": "prune-dce:warm-rw",
+    "phase": "measured",
+    "round": 0,
+    "id": "0006-prune-dce-warm-rw",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "unknown-public-api-no-hit-signal",
+    "cache_before": {
+      "wazero-v1.11.0-arm64-darwin/0a24d2a7cf81703ede39631af4ff1aeddb8ba0854c7e4824cb0bd5d370029142": {
+        "sha256": "25565c14a0bab658da7d8dd7bcc490b410ea4bdfac2adf2677722f647ba854d5",
+        "bytes": 26110043
+      },
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "cache_after": {
+      "wazero-v1.11.0-arm64-darwin/0a24d2a7cf81703ede39631af4ff1aeddb8ba0854c7e4824cb0bd5d370029142": {
+        "sha256": "25565c14a0bab658da7d8dd7bcc490b410ea4bdfac2adf2677722f647ba854d5",
+        "bytes": 26110043
+      },
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "metrics": {
+      "process_peak_bytes": 73793536,
+      "core-ready_heap_alloc_bytes": 15202712,
+      "core-ready_rss_bytes": 65519616,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 74899459,
+      "settled_heap_alloc_bytes": 22589816,
+      "settled_rss_bytes": 73793536,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 22628560,
+      "closed_rss_bytes": 73826304,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 30750,
+      "cache_bytes": 26132106
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "b32b7329eee5a914e286bfc252412995667314411c826a6969955fcb8c6856d5",
+      "stdout.jsonl": "b52704d2bd4b2045f6661f6f5b7f02c466a3a89f410e77a7b661c521ea816590"
+    }
+  },
+  {
+    "cell": "prune-dce:empty",
+    "phase": "measured",
+    "round": 0,
+    "id": "0007-prune-dce-empty",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "fresh-writable-population",
+    "cache_before": {},
+    "cache_after": {
+      "wazero-v1.11.0-arm64-darwin/0a24d2a7cf81703ede39631af4ff1aeddb8ba0854c7e4824cb0bd5d370029142": {
+        "sha256": "25565c14a0bab658da7d8dd7bcc490b410ea4bdfac2adf2677722f647ba854d5",
+        "bytes": 26110043
+      },
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "metrics": {
+      "process_peak_bytes": 190644224,
+      "core-ready_heap_alloc_bytes": 15213128,
+      "core-ready_rss_bytes": 189415424,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 1873992166,
+      "settled_heap_alloc_bytes": 22597296,
+      "settled_rss_bytes": 190644224,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 22639568,
+      "closed_rss_bytes": 190644224,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 24041,
+      "cache_bytes": 26132106
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "ab956b30b1bd078c893a4f1257cf1aea95d1e735fbd57e696e8b6a49140c8d08",
+      "stdout.jsonl": "a8510a1a48da2bec76bb64f97689a7cfbe4fff27d8743bc283cbcf33ee3b8bda"
+    }
+  },
+  {
+    "cell": "original-oz:empty",
+    "phase": "measured",
+    "round": 0,
+    "id": "0008-original-oz-empty",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "fresh-writable-population",
+    "cache_before": {},
+    "cache_after": {
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      },
+      "wazero-v1.11.0-arm64-darwin/9c993068e9855878f863c7a4b2fd96b0b3a1eed1e19236ff4a60685d6c0c14ee": {
+        "sha256": "f9537387c7e0f25540c8c26af0c9c5bd5ea1231143ff7148cd06c8fbc5dd42e9",
+        "bytes": 23439191
+      }
+    },
+    "metrics": {
+      "process_peak_bytes": 301563904,
+      "core-ready_heap_alloc_bytes": 240612816,
+      "core-ready_rss_bytes": 293847040,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 1964996167,
+      "settled_heap_alloc_bytes": 247437488,
+      "settled_rss_bytes": 301563904,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 247478800,
+      "closed_rss_bytes": 301596672,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 33584,
+      "cache_bytes": 23461254
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "92ffb2bcae6f1d37c6833586608f1b056073631bcf2d3516e78ca75ac4312f80",
+      "stdout.jsonl": "40734a4e45aa56588eded2e80c80ea0faf3ef997fdf993dd0f2f8351bdbe9492"
+    }
+  },
+  {
+    "cell": "original:disabled",
+    "phase": "measured",
+    "round": 0,
+    "id": "0009-original-disabled",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "disabled",
+    "cache_before": {},
+    "cache_after": {},
+    "metrics": {
+      "process_peak_bytes": 173277184,
+      "core-ready_heap_alloc_bytes": 106777360,
+      "core-ready_rss_bytes": 163758080,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 1842247791,
+      "settled_heap_alloc_bytes": 115672448,
+      "settled_rss_bytes": 173277184,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 115715120,
+      "closed_rss_bytes": 173326336,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 63209,
+      "cache_bytes": 0
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "7c302d667df0c67d1988b97f2ecf621d01cfb82117e5d22f33eed4313c684443",
+      "stdout.jsonl": "f4ca3be2841f83b6ee9097161cd8a572c8b3b66f001bbfb27d9b366acadf1063"
+    }
+  },
+  {
+    "cell": "prune-only:empty",
+    "phase": "measured",
+    "round": 0,
+    "id": "0010-prune-only-empty",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "fresh-writable-population",
+    "cache_before": {},
+    "cache_after": {
+      "wazero-v1.11.0-arm64-darwin/4e6bfab5fff8d65908150f03b5c6ab273362218ad720af5878311ed478fa4b2f": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      },
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "metrics": {
+      "process_peak_bytes": 193052672,
+      "core-ready_heap_alloc_bytes": 16604136,
+      "core-ready_rss_bytes": 191971328,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 1875561208,
+      "settled_heap_alloc_bytes": 25453616,
+      "settled_rss_bytes": 193052672,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 25492376,
+      "closed_rss_bytes": 193052672,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 25583,
+      "cache_bytes": 26261274
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "c879e60d6f511029b655a4ece4c4a5a2b7137af298f8e1979d27ddc8a54c2d12",
+      "stdout.jsonl": "20b7019b002cc10c496ac85abb44f3a06604ae4ae0ae9b0f368d42a52eb7e38e"
+    }
+  },
+  {
+    "cell": "prune-only:disabled",
+    "phase": "measured",
+    "round": 0,
+    "id": "0011-prune-only-disabled",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "disabled",
+    "cache_before": {},
+    "cache_after": {},
+    "metrics": {
+      "process_peak_bytes": 174555136,
+      "core-ready_heap_alloc_bytes": 108190984,
+      "core-ready_rss_bytes": 164937728,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 1815276250,
+      "settled_heap_alloc_bytes": 117036712,
+      "settled_rss_bytes": 174555136,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 117078872,
+      "closed_rss_bytes": 174587904,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 28875,
+      "cache_bytes": 0
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "926ef1de17c1a85688f866381f0a7a83e8b520463b67aea444a1c1076d152e9e",
+      "stdout.jsonl": "155438f34416cef5d90a277a74e8a282b95ea58039a9bbadab714c8b7175f72b"
+    }
+  },
+  {
+    "cell": "stripped:warm-rw",
+    "phase": "measured",
+    "round": 0,
+    "id": "0012-stripped-warm-rw",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "unknown-public-api-no-hit-signal",
+    "cache_before": {
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      },
+      "wazero-v1.11.0-arm64-darwin/a00589779c26f5811fec5f0a91c72c870115891547bed3ec2a3613fd952df545": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      }
+    },
+    "cache_after": {
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      },
+      "wazero-v1.11.0-arm64-darwin/a00589779c26f5811fec5f0a91c72c870115891547bed3ec2a3613fd952df545": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      }
+    },
+    "metrics": {
+      "process_peak_bytes": 74399744,
+      "core-ready_heap_alloc_bytes": 15378688,
+      "core-ready_rss_bytes": 65781760,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 74807125,
+      "settled_heap_alloc_bytes": 22992448,
+      "settled_rss_bytes": 74399744,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 23034608,
+      "closed_rss_bytes": 74432512,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 27000,
+      "cache_bytes": 26261274
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "0ee8907da97be7987e6ee0a140550cd4caf379780358e920b3e540b765727309",
+      "stdout.jsonl": "ee24c67b52c7dd42c38bf0f3ab5f3cc870a215fb326ffc0ef0ff9bb342af4f53"
+    }
+  },
+  {
+    "cell": "stripped:empty",
+    "phase": "measured",
+    "round": 0,
+    "id": "0013-stripped-empty",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "fresh-writable-population",
+    "cache_before": {},
+    "cache_after": {
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      },
+      "wazero-v1.11.0-arm64-darwin/a00589779c26f5811fec5f0a91c72c870115891547bed3ec2a3613fd952df545": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      }
+    },
+    "metrics": {
+      "process_peak_bytes": 197263360,
+      "core-ready_heap_alloc_bytes": 133425432,
+      "core-ready_rss_bytes": 188678144,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 1842244750,
+      "settled_heap_alloc_bytes": 141038056,
+      "settled_rss_bytes": 197263360,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 141076800,
+      "closed_rss_bytes": 197296128,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 66000,
+      "cache_bytes": 26261274
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "fc7db3808dbb83870d0243391e4b5ee1803fea19cb5a876f7de04cb0d9c5436a",
+      "stdout.jsonl": "5c18b7506dddb85fc2eec9146aedc4b57e5d6edc699529967369294f3d277c13"
+    }
+  },
+  {
+    "cell": "original:empty",
+    "phase": "measured",
+    "round": 0,
+    "id": "0014-original-empty",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "fresh-writable-population",
+    "cache_before": {},
+    "cache_after": {
+      "wazero-v1.11.0-arm64-darwin/52ec3756affa756c397d6e3270a98ceca2f50913a2f9dca5400abd012fa06568": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      },
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "metrics": {
+      "process_peak_bytes": 200671232,
+      "core-ready_heap_alloc_bytes": 134829560,
+      "core-ready_rss_bytes": 191004672,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 1851590500,
+      "settled_heap_alloc_bytes": 143720952,
+      "settled_rss_bytes": 200671232,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 143762152,
+      "closed_rss_bytes": 200720384,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 38542,
+      "cache_bytes": 26261274
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "7d9a78925b1758ce3d6817f890bc08c54bf229d30622cf86ddf60a032d61b861",
+      "stdout.jsonl": "68db6bd072e43059c0f76280cca4e3cf288390fe0fcdaf2efdc2333994180663"
+    }
+  },
+  {
+    "cell": "prune-oz:warm-rw",
+    "phase": "measured",
+    "round": 0,
+    "id": "0015-prune-oz-warm-rw",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "unknown-public-api-no-hit-signal",
+    "cache_before": {
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      },
+      "wazero-v1.11.0-arm64-darwin/f83dfff2c3e698d094130254f0ad4d5dc9b534a9539595bee6df5aa8c7e8ed44": {
+        "sha256": "43e6206614673abbb9a3747ac555c582ab56f4945b6cfbd0d3e756a333fe37be",
+        "bytes": 23439087
+      }
+    },
+    "cache_after": {
+      "wazero-v1.11.0-arm64-darwin/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      },
+      "wazero-v1.11.0-arm64-darwin/f83dfff2c3e698d094130254f0ad4d5dc9b534a9539595bee6df5aa8c7e8ed44": {
+        "sha256": "43e6206614673abbb9a3747ac555c582ab56f4945b6cfbd0d3e756a333fe37be",
+        "bytes": 23439087
+      }
+    },
+    "metrics": {
+      "process_peak_bytes": 68534272,
+      "core-ready_heap_alloc_bytes": 14187528,
+      "core-ready_rss_bytes": 60882944,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 64563250,
+      "settled_heap_alloc_bytes": 20912768,
+      "settled_rss_bytes": 68534272,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 20952472,
+      "closed_rss_bytes": 68534272,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 15709,
+      "cache_bytes": 23461150
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "65416bc483023854cb17134042e05bd1409a7d6cb010d336f8ed7061610bf32e",
+      "stdout.jsonl": "1950c85ddcec665a1b94dcb56bc8c350237dc1fa4d0c4ba852017a3fefb8d14f"
+    }
+  },
+  {
+    "cell": "prune-oz:disabled",
+    "phase": "measured",
+    "round": 0,
+    "id": "0016-prune-oz-disabled",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "disabled",
+    "cache_before": {},
+    "cache_after": {},
+    "metrics": {
+      "process_peak_bytes": 285605888,
+      "core-ready_heap_alloc_bytes": 224864600,
+      "core-ready_rss_bytes": 278118400,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 1930425375,
+      "settled_heap_alloc_bytes": 231585600,
+      "settled_rss_bytes": 285605888,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 231625304,
+      "closed_rss_bytes": 285605888,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 52500,
+      "cache_bytes": 0
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "4426cfb203ef46e482557b2689ebe08933cc56d3bab518a512dc278178dbe94c",
+      "stdout.jsonl": "e7505089ef9a015dc68def041962c10967f1ffcc63a16288630a1c3f5042ba75"
+    }
+  },
+  {
+    "cell": "prune-dce:disabled",
+    "phase": "measured",
+    "round": 0,
+    "id": "0017-prune-dce-disabled",
+    "invalid_reasons": [],
+    "exit_code": 0,
+    "cache_certainty": "disabled",
+    "cache_before": {},
+    "cache_after": {},
+    "metrics": {
+      "process_peak_bytes": 170868736,
+      "core-ready_heap_alloc_bytes": 107741488,
+      "core-ready_rss_bytes": 162529280,
+      "core-ready_main_pages": 62,
+      "core-ready_kernel_pages": 16,
+      "core-ready_operation_ns": 1785106208,
+      "settled_heap_alloc_bytes": 115127640,
+      "settled_rss_bytes": 170868736,
+      "settled_main_pages": 63,
+      "settled_kernel_pages": 16,
+      "settled_operation_ns": 0,
+      "closed_heap_alloc_bytes": 115167344,
+      "closed_rss_bytes": 170901504,
+      "closed_main_pages": 0,
+      "closed_kernel_pages": 0,
+      "closed_operation_ns": 57167,
+      "cache_bytes": 0
+    },
+    "raw_sha256": {
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "command.json": "30515034161ee8607c5b962ae878999aa8b8685da6a0e4689b26c7d4387f22e6",
+      "stdout.jsonl": "03cce97b571c647961ab1d8053450931631966cad0d67a1fdec5fe1e5f56a926"
+    }
+  }
+]

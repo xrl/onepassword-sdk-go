@@ -1,0 +1,55 @@
+{
+  "linux-smoke": {
+    "measured": 2,
+    "warmups": 0,
+    "population": 1,
+    "processes": 3,
+    "unexpected_failures": 0
+  },
+  "linux-screen-artifacts": {
+    "measured": 18,
+    "warmups": 6,
+    "population": 0,
+    "processes": 24,
+    "unexpected_failures": 0
+  },
+  "linux-screen-caches": {
+    "measured": 18,
+    "warmups": 6,
+    "population": 12,
+    "processes": 36,
+    "unexpected_failures": 0
+  },
+  "linux-screen-tuning": {
+    "measured": 42,
+    "warmups": 14,
+    "population": 28,
+    "processes": 84,
+    "unexpected_failures": 0
+  },
+  "linux-confirmation": {
+    "measured": 60,
+    "warmups": 12,
+    "population": 36,
+    "processes": 108,
+    "unexpected_failures": 0
+  },
+  "linux-cache-negative": {
+    "negative_cases": 3,
+    "processes": 6
+  },
+  "darwin-screen": {
+    "measured": 18,
+    "warmups": 6,
+    "population": 0,
+    "processes": 24,
+    "unexpected_failures": 0
+  },
+  "darwin-confirmation": {
+    "measured": 40,
+    "warmups": 8,
+    "population": 24,
+    "processes": 72,
+    "unexpected_failures": 0
+  }
+}
