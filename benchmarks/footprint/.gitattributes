@@ -1,3 +1,10 @@
 # Immutable historical inputs retain original bytes/line endings and checksums.
 evidence/legacy/p0/raw.csv -text whitespace=cr-at-eol
 evidence/legacy/p0/protocol.md -text -whitespace
+# Keep generated raw data out of the default source-review diff, not out of Git.
+evidence/**/*.json linguist-generated=true
+evidence/**/*.jsonl linguist-generated=true
+evidence/**/*.csv linguist-generated=true
+evidence/**/*.out linguist-generated=true
+evidence/**/*.time linguist-generated=true
+evidence/**/*.tar.gz linguist-generated=true

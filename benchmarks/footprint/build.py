@@ -17,7 +17,8 @@ def digest(path):
 
 
 def output(*args):
-    return subprocess.check_output(args, cwd=ROOT, text=True).strip()
+    env = dict(os.environ, GOPROXY='off', GOTOOLCHAIN='local', GOFLAGS='')
+    return subprocess.check_output(args, cwd=ROOT, env=env, text=True).strip()
 
 
 def build(artifact, directory, goos, goarch):

@@ -1,0 +1,7 @@
+{
+  "sha256": "272e38c39a5a0a7d3f49a91e4cade07d6ff8a3736275b15c273c1e299aeb4681",
+  "bytes": 106500,
+  "members": 284,
+  "content": "Byte-exact text evidence and its original archive.json; no executable/cache blobs.",
+  "recipe": "python3 benchmarks/footprint/bundle.py EXTRACTED_EVIDENCE OUTPUT_DIRECTORY"
+}

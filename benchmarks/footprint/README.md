@@ -1,10 +1,13 @@
 # Credential-free SDK footprint lab
 
-**Tooling and smoke evidence, not a memory-reduction or release-acceptance claim.**
+**Confirmed credential-free Linux/ARM64 measurements, not authenticated or release acceptance.**
+
+**Result:** original-artifact prewarmed cache reduced median cgroup peak **153.44 → 61.27 MiB (−60.1%)**. Cache + Oz reached **53.30 MiB**, but Oz **increased uncached peak to 252.16 MiB**. Descriptor pruning/DCE alone was not a substantial memory fix. See the [campaign report](evidence/campaign-report.md).
 Shipping `core.wasm`, SDK defaults, `go.mod`/`go.sum`, P0 synchronization/retry and public API are unchanged. No authenticated or ESO tests can pass acceptance in this lane. No lifecycle redesign, stable cache API, private Wazero cache parsing, unsafe reflection, custom allocator, or library-wide GC tuning is included.
 
 ## Evidence and corrected specifications
 
+- [Confirmed campaign and recommendations](evidence/campaign-report.md), [357-process integrity audit](evidence/campaign-audit.json)
 - [Canonical footprint specification](../../docs/memory/onepassword-sdk-go-footprint-reduction-spec.md)
 - [Canonical lifecycle proposal (future work)](../../docs/memory/onepassword-go-sdk-memory-spec.md)
 - [Artifact report](evidence/artifacts/report.md), [exact tools/flags/digests and full ABI/section report](evidence/artifacts/artifacts.json)
@@ -24,6 +27,14 @@ Pinned Go 1.27.1, Extism 1.7.1, Wazero 1.11.0; no dependency/toolchain upgrades.
 - Process mapping RSS is partitioned into file, anonymous executable, and anonymous non-executable/other. Go stats, stacks and both linear memories explain subsets, **not additive buckets**. Cgroup `memory.stat` file/page-cache charges are distinct from anonymous executable memory and process file RSS; whole cache files are hashed/touched before a warm trial. Host cache is uncontrolled and never purged.
 
 ## Reproduce locally
+
+Replay the checked-in evidence without launching benchmarks:
+
+```sh
+python3 benchmarks/footprint/report.py
+```
+
+Each new campaign keeps reviewable JSON summaries and a checksummed `raw.tar.gz` containing byte-exact text evidence, not native code or cache blobs. `bundle.py` generates these deterministic bundles; `report.py` verifies/replays them without extracting paths into the checkout.
 
 Run from repository root. Tools must already exist at the pinned paths. Outputs must not exist; choose a fresh directory for every rerun. All commands are offline except the explicitly separate SSH transport below.
 

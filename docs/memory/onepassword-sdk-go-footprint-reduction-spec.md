@@ -1,6 +1,6 @@
 # P2 proposal: reduce the active `onepassword-sdk-go` core footprint
 
-- **Status:** Draft / experiment-first; corrected source-accounting edition
+- **Status:** Draft / experiment-first; Linux/ARM64 credential-free confirmation complete
 - **Target:** `github.com/1Password/onepassword-sdk-go`, service-account path
 - **Motivating stack:** `onepassword-sdk-go` v0.4.1, Extism Go SDK v1.7.1, Wazero v1.11.0
 - **Primary deployment:** External Secrets Operator on Linux/ARM64
@@ -13,16 +13,16 @@
 
 ## Executive decision
 
-The dominant single-core cost is Wazero compiling a large, broad WASM module, not the module's initial linear memory. The next work should therefore pursue two independent reductions:
+The confirmed credential-free Linux/ARM64 measurements change the priority: **move compilation out of the constrained application; do not equate a smaller WASM file with a smaller compiler working set.** The [reproducible campaign report](../../benchmarks/footprint/evidence/campaign-report.md) records source, raw evidence, controls and limitations.
 
-1. **Do compilation outside the memory-constrained application start** and load a trusted, prewarmed Wazero compilation cache.
-2. **Give Wazero much less code to compile** by producing an Extism-specific core artifact, removing 1,741 apparently runtime-unused `wasm-bindgen` descriptor exports, and running dead-code elimination.
+1. **Trusted prewarmed cache first.** Ten measured fresh processes plus two warmups per condition reduced the original artifact's median cgroup peak from **153.44 to 61.27 MiB (−60.1%)**, through malformed initialization/invocation and 30-second settling. Supported require-hit semantics, runtime ownership and authenticated acceptance remain prerequisites for production low-memory use.
+2. **General size optimization is a conditional cache companion, not an uncached fix.** Prune+`-Oz` with a warm cache reached **53.30 MiB**, but uncached peak rose to **252.16 MiB (+64%)**. Original+`-Oz` produced nearly the same body count and warm-cache result without pruning. Any extra ~8 MiB benefit must justify its miss peak and compatibility risk.
+3. **Descriptor pruning is not the large memory lever originally hypothesized.** Prune-only retained all 9,537 bodies. Prune+DCE left 8,485 but reduced confirmed uncached peak by only **2.5%**, below the 20% slim-core memory gate. It may still be ABI/build hygiene; source-level capability reduction remains untested.
+4. **Small Go memory limits are not the main fix.** Uncached screening saved about 10–11% of peak while increasing startup cost 2–3× and GC cycles from 8 to hundreds. Never apply these SDK-only process budgets directly to a full controller.
 
-A local Darwin/ARM64 probe makes the first path especially promising: a prewarmed persistent compilation cache reduced credential-free core-load peak RSS from 156.4 MiB to 64.4 MiB. After an invalid but real call into `init_client`, the corresponding result was 164.5 MiB versus 74.8 MiB. These are exploratory results, not Linux or authenticated acceptance evidence. An empty cache made the cold peak worse, at 181.2 MiB, so silently enabling a writable cache is unsafe.
+Empty-cache screening peaked around **195 MiB** for the original artifact and **291–292 MiB** for Oz variants. Missing/stale entries on a verified read-only mount still compiled before a write error. Keep cold-start headroom until a supported strict-cache implementation exists.
 
-Simple tuning is unlikely to be enough. Stripping all custom sections reduced the artifact by 12.4% but core-load peak RSS by only about 1%. Disabling Wazero debug information did not produce a repeatable peak reduction, forcing the interpreter was previously worse, and the module starts with only 62 linear-memory pages, about 3.9 MiB.
-
-The first authoritative experiment should therefore be a Linux/ARM64 cgroup test of a **prewarmed cache**, followed by an authenticated client and actual External Secrets Operator startup. In parallel, the core build owners should determine why an Extism artifact exports the broad `wasm-bindgen` descriptor surface and produce a DCE-capable build with a narrow ABI.
+These are core/parser experiments, not authenticated SDK or ESO acceptance. The next experiment is a dedicated private fixture with the **original artifact and trusted prewarmed cache**, then the exact controller image. Shipping WASM, SDK defaults and the live 512 MiB controller limit are unchanged.
 
 ## Relationship to P0 and P1
 
@@ -33,7 +33,7 @@ It does not replace:
 - **P0 synchronization:** PR #285 prevents concurrent cold callers from compiling and retaining multiple cores.
 - **P1 ownership:** deterministic `Client.Close`, `Plugin.Close`, core leases, and runtime shutdown prevent resources from accumulating across clients or generations.
 
-P0 is a prerequisite for meaningful footprint measurements: every P2 run must prove that exactly one core was published. P1 remains a separate API/lifecycle change. No P2 patch should quietly absorb P1 or weaken P0's retry-after-load-failure behavior.
+P0 is a prerequisite for meaningful footprint measurements: each successful P2 load must prove exactly one loader attempt and one published core identity. Failure scenarios must report attempts and show that no partial core was published. P1 remains a separate API/lifecycle change. No P2 patch should quietly absorb P1 or weaken P0's retry-after-load-failure behavior.
 
 ## Problem statement
 
@@ -48,6 +48,14 @@ That leaves three distinct memory questions:
 All three matter, but they require different remedies. A page limit may bound operation growth without changing compilation peak. A compilation cache may remove compiler allocations without shrinking a fully exercised module. A smaller core can improve both.
 
 ## Current evidence
+
+### Confirmed footprint campaign
+
+The [Linux/ARM64 and Darwin/ARM64 report](../../benchmarks/footprint/evidence/campaign-report.md) and [integrity audit](../../benchmarks/footprint/evidence/campaign-audit.json) cover 357 fresh processes including screening, confirmation, warmups, cache population and expected negative cases. Linux confirmation uses six selected cells, each with ten measured processes and two warmups; Darwin confirms four cells. No unexpected protocol failure occurred. Authenticated operations, Linux AMD64, cold-node page-cache charging and full ESO acceptance remain unmeasured.
+
+Every Linux process used its own 512 MiB/no-swap cgroup, two-core CPU quota and `GOMAXPROCS=2`. Cgroup peak includes the small supervisor; process RSS and cgroup page-cache accounting are not interchangeable. Warm artifacts were populated and hashed before the measured process. Do not extrapolate these prewarmed-file-cache results to a cold node.
+
+The historical data below remain separate and retain their original limitations; they are not pooled with the confirmed campaign.
 
 ### Controlled P0 benchmark
 
@@ -236,7 +244,7 @@ At every applicable stage record:
 - `/proc/<pid>/smaps_rollup` and selected mapping categories;
 - RSS, PSS, anonymous RSS, file-backed RSS, and private dirty memory;
 - Go `HeapAlloc`, `HeapInuse`, `HeapIdle`, `HeapReleased`, `HeapSys`, `Sys`, `TotalAlloc`, allocation count, and GC pauses;
-- WASM linear-memory pages before and after calls;
+- separate SDK-main and Extism-kernel logical WASM pages before and after calls (both default buffers are Go-heap subsets), plus their configured per-memory maxima;
 - wall time and CPU time; and
 - cache outcome: disabled, hit, miss, stale, corrupt, or unknown.
 
@@ -298,7 +306,7 @@ Do not expose `wazero.RuntimeConfig` or `wazero.CompilationCache` from the stabl
 
 - Loads only an exact, verified cache hit.
 - Missing, stale, corrupt, or incompatible entries return typed errors.
-- Never compiles or writes in the constrained process.
+- Never cold-compiles a missing guest module or writes cache entries in the constrained process. Bounded cache-hit entry-preamble/host-glue generation is still measured; require-hit does not mean zero native-code generation.
 - Is the preferred policy for a memory-bounded controller.
 
 Wazero v1.11.0 does not expose a public read-only cache or cache-hit result, and its `CompilationCache` interface is not intended for third-party implementations. `RequireHit` must therefore not parse or reproduce Wazero's private cache format in SDK code. A real implementation requires an upstream Wazero read-only/require-hit API or equivalent supported hook.
@@ -456,7 +464,7 @@ Compilation dominates the observed cold floor, but authenticated use can grow li
 
 ### E1. WASM memory bound
 
-The module has an initial 62 pages and no declared maximum, so Wazero's default permits up to 65,536 pages. Determine the maximum page count reached by:
+The SDK module starts at 62 pages with no declared maximum; the separately instantiated Extism kernel starts at 16 pages. `Plugin.Memory()` exposes only the kernel. Measure both separately, using the benchmark-only main-module accessor (or a supported upstream equivalent), and report their sum only as logical bytes, not additional RSS. Wazero's default permits up to 65,536 pages **per memory**; `WithMemoryLimitPages` is not a combined SDK+kernel budget. Determine each memory's maximum page count reached by:
 
 - client authentication;
 - one and many small secret reads;
@@ -724,13 +732,13 @@ The local empty-cache peak was 15.8% worse than no cache. Automatic filesystem w
 
 ## Recommended next experiment
 
-Build one Linux/ARM64 probe containing the P0 fix and run this exact sequence under a 512 MiB cgroup:
+Do not repeat the completed credential-free matrix as a substitute for the missing acceptance lane. Under the existing 512 MiB headroom:
 
-1. no cache, core load only;
-2. empty writable cache, core load only;
-3. prewarmed read-only cache, core load only;
-4. the same three conditions through valid `NewClient`;
-5. prewarmed read-only cache through representative secret reads;
-6. repeat on the target Raspberry Pi and record cache-hit certainty, `memory.peak`, `memory.stat`, `smaps_rollup`, latency, and WASM pages.
+1. obtain an approved dedicated private service-account fixture, without recording its token or secret values;
+2. compare original-artifact no-cache, empty-cache and verified prewarmed-cache paths through valid `NewClient` and representative reads;
+3. measure both WASM memories, cgroup peak/file-cache accounting, operation/GC latency and a full refresh interval;
+4. separately test cold-node cache charging and Linux AMD64;
+5. resolve supported require-hit/outcome hooks and runtime-scoped ownership before wiring the ESO provider; the current default global `NewClient` does not opt into the proposed runtime option;
+6. validate the exact ESO image at 512 MiB through the 20-start/rotation/soak gate before considering a lower limit.
 
-If the authenticated warm-cache peak remains at least 25% below baseline, proceed with the strict-cache API/security design. At the same time, ask the core build owners for an Extism-only artifact with the 1,741 descriptor exports removed before DCE. Those are the two paths most likely to make one active core materially smaller rather than merely preventing duplicates or cleaning it up later.
+The original-artifact cache path is the leading candidate. Reconsider Oz only as an independently validated secondary cache optimization. Descriptor pruning/DCE alone did not meet the memory gate; further core reduction needs owner/source evidence, and compiler patches need allocation profiles rather than inference from body count.

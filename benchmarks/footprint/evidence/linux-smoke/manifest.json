@@ -1,0 +1,63 @@
+{
+  "host": {
+    "platform": "Linux-6.12.47+rpt-rpi-2712-aarch64-with-glibc2.41",
+    "uname": [
+      "Linux",
+      "benchmark-host",
+      "6.12.47+rpt-rpi-2712",
+      "#1 SMP PREEMPT Debian 1:6.12.47-1+rpt1 (2025-09-16)",
+      "aarch64",
+      ""
+    ],
+    "cpu_count": 4,
+    "page_bytes": 16384,
+    "load": [
+      0.15234375,
+      0.2021484375,
+      0.1884765625
+    ],
+    "/proc/meminfo": "MemTotal:        8256512 kB\nMemFree:          341152 kB\nMemAvailable:    3531792 kB\nBuffers:          656640 kB\nCached:          2579456 kB\nSwapCached:          432 kB\nActive:          3138208 kB\nInactive:        3948496 kB\nActive(anon):    2447584 kB\nInactive(anon):  1581104 kB\nActive(file):     690624 kB\nInactive(file):  2367392 kB\nUnevictable:        1136 kB\nMlocked:               0 kB\nSwapTotal:       2097136 kB\nSwapFree:        1985152 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            229328 kB\nWriteback:             0 kB\nAnonPages:       3851472 kB\nMapped:          1206352 kB\nShmem:            178656 kB\nKReclaimable:     353680 kB\nSlab:             524448 kB\nSReclaimable:     353680 kB\nSUnreclaim:       170768 kB\nKernelStack:       14064 kB\nPageTables:        24736 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     6225392 kB\nCommitted_AS:    9629504 kB\nVmallocTotal:   68447887360 kB\nVmallocUsed:       70576 kB\nVmallocChunk:          0 kB\nPercpu:            10560 kB\nCmaTotal:          65536 kB\nCmaFree:             112 kB\n",
+    "/proc/cpuinfo": "processor\t: 0\nBogoMIPS\t: 108.00\nFeatures\t: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp\nCPU implementer\t: 0x41\nCPU architecture: 8\nCPU variant\t: 0x4\nCPU part\t: 0xd0b\nCPU revision\t: 1\n\nprocessor\t: 1\nBogoMIPS\t: 108.00\nFeatures\t: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp\nCPU implementer\t: 0x41\nCPU architecture: 8\nCPU variant\t: 0x4\nCPU part\t: 0xd0b\nCPU revision\t: 1\n\nprocessor\t: 2\nBogoMIPS\t: 108.00\nFeatures\t: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp\nCPU implementer\t: 0x41\nCPU architecture: 8\nCPU variant\t: 0x4\nCPU part\t: 0xd0b\nCPU revision\t: 1\n\nprocessor\t: 3\nBogoMIPS\t: 108.00\nFeatures\t: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp\nCPU implementer\t: 0x41\nCPU architecture: 8\nCPU variant\t: 0x4\nCPU part\t: 0xd0b\nCPU revision\t: 1\n\nRevision\t: d04170\nModel\t\t: Raspberry Pi 5 Model B Rev 1.0\n",
+    "/proc/swaps": "Filename\t\t\t\tType\t\tSize\t\tUsed\t\tPriority\n/dev/zram0                              partition\t2097136\t\t111984\t\t100\n",
+    "page_cache_protocol": "Uncontrolled host cache; no purge. Per-cell fresh directory, warm population reads whole cache files to hash them before trial. Anonymous executable mappings remain separate from file cache."
+  },
+  "options": {
+    "build": [
+      "original=builds/original"
+    ],
+    "out": "/var/tmp/op-sdk-footprint-20260904-3b08106/smoke",
+    "memory_limit": null,
+    "cell": null,
+    "cache": [
+      "disabled",
+      "warm-ro"
+    ],
+    "repeats": 1,
+    "warmups": 0,
+    "seed": 285,
+    "calls": 2,
+    "input_bytes": 64,
+    "settle": "1s",
+    "diagnostic": "none",
+    "systemd": true
+  },
+  "order": [
+    {
+      "cell": "original:disabled",
+      "phase": "measured",
+      "round": 0
+    },
+    {
+      "cell": "original:warm-ro",
+      "phase": "measured",
+      "round": 0
+    }
+  ],
+  "source_sha256": {
+    "archive.py": "85da8595cc4696537bb76f5082265b36ac67d87939942802c116e717b10c4a76",
+    "artifacts.py": "8ab43eb2eebab0e4954d750121d191ea3ae79477cfffea0ce71deb9c00271e93",
+    "build.py": "3bd0ae32b86ed550db62e6e7edbdcf530bed23ac08df5fb85a2c50dfb0023074",
+    "controller.py": "6d0507db58de165fae51de226e64f7454c8ba0097d66bbf26b26b4ac9da54eb9",
+    "linux_trial.py": "b43cac1773d933c722a51bdf00aee3977a812b0658b97ea2e68c21c3d70a5876"
+  }
+}

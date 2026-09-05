@@ -254,7 +254,7 @@ This option must use a generation token so a stale timer cannot close a core tha
 
 ### Phase 3: reduce the single-core footprint
 
-The focused follow-up specification is [`onepassword-sdk-go-footprint-reduction-spec.md`](./onepassword-sdk-go-footprint-reduction-spec.md).
+The focused follow-up specification is [`onepassword-sdk-go-footprint-reduction-spec.md`](./onepassword-sdk-go-footprint-reduction-spec.md). Its [confirmed credential-free campaign](../../benchmarks/footprint/evidence/campaign-report.md) reduced Linux/ARM64 median cgroup peak from 153.44 to 61.27 MiB with a trusted prewarmed original-artifact cache. Prune+DCE alone saved only 2.5%; `-Oz` increased uncached peak despite making the file smaller. Supported strict-cache semantics, P1 ownership and authenticated/ESO acceptance remain outstanding; no shipping artifact or default behavior changed.
 
 Serialization removes multiplicative memory growth, but the single-core floor remains high. The following work should be benchmark-driven rather than exposed as unverified tuning knobs.
 
@@ -264,7 +264,7 @@ Add a standalone benchmark executable so measurements do not include the Go test
 
 - current and peak RSS;
 - Go `HeapAlloc`, `HeapInuse`, and `Sys`;
-- WASM linear-memory pages;
+- SDK-main and Extism-kernel linear-memory pages separately (Go-heap subsets, not additional RSS buckets);
 - core compilation and instantiation time;
 - `NewClient` wall time and allocations;
 - operation latency and allocations; and

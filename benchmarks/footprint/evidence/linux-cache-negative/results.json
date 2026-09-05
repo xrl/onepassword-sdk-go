@@ -1,0 +1,132 @@
+[
+  {
+    "case": "missing-core-entry",
+    "exit_code": 1,
+    "invalid_reasons": [],
+    "tested_artifact_sha256": "23d115f4ac7519b48172df3e8615945572dbda7033d51b44c9490fd533ae0f23",
+    "cache_before_mutation": {
+      "wazero-v1.11.0-arm64-linux/52ec3756affa756c397d6e3270a98ceca2f50913a2f9dca5400abd012fa06568": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      },
+      "wazero-v1.11.0-arm64-linux/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "cache_after_mutation": {
+      "wazero-v1.11.0-arm64-linux/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "cache_after_trial": {
+      "wazero-v1.11.0-arm64-linux/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "cgroup_peak_bytes": 172507136,
+    "expected_error_fragment": "read-only file system",
+    "raw_sha256": {
+      "stderr.txt": "6d591f011cd45dcc07e10aca8f657bcf77952db0f158027c8ba89507832f3c5e",
+      "command.json": "09f654310b6754ff0b4d804f668fb3889f4fff761a7025fb70e1db9e274143cc",
+      "stdout.jsonl": "5a6019e9e6264d2a17910d60f50ab4a3e32627ce3d8917dee3cf383238f00ef0",
+      "systemd.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "linux.json": "4f336f9f2463dd9c6ab175b2f54564489a173bac70cffa3a3beeee546a84af27",
+      "systemd.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "case": "different-core",
+    "exit_code": 1,
+    "invalid_reasons": [],
+    "tested_artifact_sha256": "d3f2ef3068e8fb8230e3c61da80a5b4cac0a0e8ade10dd4a77cf5632fa03e408",
+    "cache_before_mutation": {
+      "wazero-v1.11.0-arm64-linux/52ec3756affa756c397d6e3270a98ceca2f50913a2f9dca5400abd012fa06568": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      },
+      "wazero-v1.11.0-arm64-linux/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "cache_after_mutation": {
+      "wazero-v1.11.0-arm64-linux/52ec3756affa756c397d6e3270a98ceca2f50913a2f9dca5400abd012fa06568": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      },
+      "wazero-v1.11.0-arm64-linux/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "cache_after_trial": {
+      "wazero-v1.11.0-arm64-linux/52ec3756affa756c397d6e3270a98ceca2f50913a2f9dca5400abd012fa06568": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      },
+      "wazero-v1.11.0-arm64-linux/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "cgroup_peak_bytes": 176685056,
+    "expected_error_fragment": "read-only file system",
+    "raw_sha256": {
+      "stderr.txt": "51eb26f58d5722148e6c1a5df7358d94b0dcb25b12ce2ebf19706facdfaa41b3",
+      "command.json": "953a20986f1bc615cd6de3fbaa4c52aff70e79112aef53348ef3b60d4d70e4f3",
+      "stdout.jsonl": "024f1cec835471b57594cfcbe057026c0cee327da5d1c441f045bd6d73eee4d4",
+      "systemd.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "linux.json": "b5a900e5339e94e4602fd2a8f77efd283a3d3ee5ae332dc157001cf7d3495aec",
+      "systemd.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "case": "truncated-core-entry",
+    "exit_code": 1,
+    "invalid_reasons": [],
+    "tested_artifact_sha256": "23d115f4ac7519b48172df3e8615945572dbda7033d51b44c9490fd533ae0f23",
+    "cache_before_mutation": {
+      "wazero-v1.11.0-arm64-linux/52ec3756affa756c397d6e3270a98ceca2f50913a2f9dca5400abd012fa06568": {
+        "sha256": "8a98eb29b708ab0d00c30bd49ed8f6463e3e13e8d96806c8dd8e5dc314c1a0be",
+        "bytes": 26239211
+      },
+      "wazero-v1.11.0-arm64-linux/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "cache_after_mutation": {
+      "wazero-v1.11.0-arm64-linux/52ec3756affa756c397d6e3270a98ceca2f50913a2f9dca5400abd012fa06568": {
+        "sha256": "358c05673d26e26b4ff442e7cc2ec30666f65878f5b3d257e9f9551cccb67b22",
+        "bytes": 13119605
+      },
+      "wazero-v1.11.0-arm64-linux/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "cache_after_trial": {
+      "wazero-v1.11.0-arm64-linux/52ec3756affa756c397d6e3270a98ceca2f50913a2f9dca5400abd012fa06568": {
+        "sha256": "358c05673d26e26b4ff442e7cc2ec30666f65878f5b3d257e9f9551cccb67b22",
+        "bytes": 13119605
+      },
+      "wazero-v1.11.0-arm64-linux/900416a4bbc24e5fe20042a341b0a410d38444c7306311017304a6bb20ea8479": {
+        "sha256": "872c2ec408a86f597a0369ac4e0a0c8e265a55cf685ba1d203123424423def4d",
+        "bytes": 22063
+      }
+    },
+    "cgroup_peak_bytes": 36700160,
+    "expected_error_fragment": "unexpected EOF",
+    "raw_sha256": {
+      "stderr.txt": "d66d1732912f7fbe51618feb7f0889400ca4c48c35bacf9f2a90e8c9316b7163",
+      "command.json": "c4cb04a03d7710bdd5d1e6f927cd89b5c63dc668bf2e47f0aad7db1d3a87c3cc",
+      "stdout.jsonl": "9710ebfbb4d45499243d5193425dcdfef345bb5283406afaa75cea1858578ad0",
+      "systemd.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "linux.json": "244dd4d228ed1aa4c1df8b7c7769abd01b75fb232c3b958e9b47a2e5a11803a7",
+      "systemd.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+]

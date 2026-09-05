@@ -1,0 +1,2264 @@
+{
+  "original-oz:disabled": {
+    "valid": 3,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 272449536,
+        "min": 263536640,
+        "max": 272449536,
+        "range": 8912896,
+        "n": 3
+      },
+      "core-ready_process_peak_bytes": {
+        "median": 267206656,
+        "min": 255672320,
+        "max": 271925248,
+        "range": 16252928,
+        "n": 3
+      },
+      "core-ready_cgroup_peak_bytes": {
+        "median": 261357568,
+        "min": 249511936,
+        "max": 264749056,
+        "range": 15237120,
+        "n": 3
+      },
+      "core-ready_user_cpu_us": {
+        "median": 6146010,
+        "min": 6105722,
+        "max": 6157309,
+        "range": 51587,
+        "n": 3
+      },
+      "core-ready_system_cpu_us": {
+        "median": 95719,
+        "min": 83585,
+        "max": 95833,
+        "range": 12248,
+        "n": 3
+      },
+      "core-ready_NumGC": {
+        "median": 10,
+        "min": 10,
+        "max": 10,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_PauseTotalNs": {
+        "median": 688573,
+        "min": 633498,
+        "max": 759998,
+        "range": 126500,
+        "n": 3
+      },
+      "core-ready_TotalAlloc": {
+        "median": 268818784,
+        "min": 268781656,
+        "max": 268819040,
+        "range": 37384,
+        "n": 3
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 201797152,
+        "min": 14287792,
+        "max": 208044872,
+        "range": 193757080,
+        "n": 3
+      },
+      "core-ready_rss_bytes": {
+        "median": 268599296,
+        "min": 257179648,
+        "max": 273661952,
+        "range": 16482304,
+        "n": 3
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_operation_ns": {
+        "median": 6141711764,
+        "min": 6132196883,
+        "max": 6164563478,
+        "range": 32366595,
+        "n": 3
+      },
+      "invalid-init_process_peak_bytes": {
+        "median": 272449536,
+        "min": 261963776,
+        "max": 272449536,
+        "range": 10485760,
+        "n": 3
+      },
+      "invalid-init_cgroup_peak_bytes": {
+        "median": 264765440,
+        "min": 254771200,
+        "max": 266108928,
+        "range": 11337728,
+        "n": 3
+      },
+      "invalid-init_user_cpu_us": {
+        "median": 6161785,
+        "min": 6125062,
+        "max": 6176894,
+        "range": 51832,
+        "n": 3
+      },
+      "invalid-init_system_cpu_us": {
+        "median": 95889,
+        "min": 83585,
+        "max": 99705,
+        "range": 16120,
+        "n": 3
+      },
+      "invalid-init_NumGC": {
+        "median": 10,
+        "min": 10,
+        "max": 10,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_PauseTotalNs": {
+        "median": 688573,
+        "min": 633498,
+        "max": 759998,
+        "range": 126500,
+        "n": 3
+      },
+      "invalid-init_TotalAlloc": {
+        "median": 275254992,
+        "min": 275222808,
+        "max": 275259936,
+        "range": 37128,
+        "n": 3
+      },
+      "invalid-init_heap_alloc_bytes": {
+        "median": 208238304,
+        "min": 20728944,
+        "max": 214480824,
+        "range": 193751880,
+        "n": 3
+      },
+      "invalid-init_rss_bytes": {
+        "median": 273743872,
+        "min": 263389184,
+        "max": 273891328,
+        "range": 10502144,
+        "n": 3
+      },
+      "invalid-init_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_operation_ns": {
+        "median": 17720081,
+        "min": 17213951,
+        "max": 17763543,
+        "range": 549592,
+        "n": 3
+      },
+      "settled_process_peak_bytes": {
+        "median": 272449536,
+        "min": 263536640,
+        "max": 272449536,
+        "range": 8912896,
+        "n": 3
+      },
+      "settled_cgroup_peak_bytes": {
+        "median": 265814016,
+        "min": 256802816,
+        "max": 266108928,
+        "range": 9306112,
+        "n": 3
+      },
+      "settled_user_cpu_us": {
+        "median": 6164057,
+        "min": 6129324,
+        "max": 6176894,
+        "range": 47570,
+        "n": 3
+      },
+      "settled_system_cpu_us": {
+        "median": 103732,
+        "min": 87561,
+        "max": 105228,
+        "range": 17667,
+        "n": 3
+      },
+      "settled_NumGC": {
+        "median": 10,
+        "min": 10,
+        "max": 10,
+        "range": 0,
+        "n": 3
+      },
+      "settled_PauseTotalNs": {
+        "median": 688573,
+        "min": 633498,
+        "max": 759998,
+        "range": 126500,
+        "n": 3
+      },
+      "settled_TotalAlloc": {
+        "median": 276645248,
+        "min": 276608120,
+        "max": 276771376,
+        "range": 163256,
+        "n": 3
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 209623616,
+        "min": 22114256,
+        "max": 215997208,
+        "range": 193882952,
+        "n": 3
+      },
+      "settled_rss_bytes": {
+        "median": 273776640,
+        "min": 264896512,
+        "max": 273940480,
+        "range": 9043968,
+        "n": 3
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 3
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_process_peak_bytes": {
+        "median": 272449536,
+        "min": 263536640,
+        "max": 272449536,
+        "range": 8912896,
+        "n": 3
+      },
+      "closed_cgroup_peak_bytes": {
+        "median": 265814016,
+        "min": 256802816,
+        "max": 266108928,
+        "range": 9306112,
+        "n": 3
+      },
+      "closed_user_cpu_us": {
+        "median": 6164057,
+        "min": 6129324,
+        "max": 6176894,
+        "range": 47570,
+        "n": 3
+      },
+      "closed_system_cpu_us": {
+        "median": 106040,
+        "min": 89692,
+        "max": 107528,
+        "range": 17836,
+        "n": 3
+      },
+      "closed_NumGC": {
+        "median": 10,
+        "min": 10,
+        "max": 10,
+        "range": 0,
+        "n": 3
+      },
+      "closed_PauseTotalNs": {
+        "median": 688573,
+        "min": 633498,
+        "max": 759998,
+        "range": 126500,
+        "n": 3
+      },
+      "closed_TotalAlloc": {
+        "median": 276833680,
+        "min": 276806720,
+        "max": 277002744,
+        "range": 196024,
+        "n": 3
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 209812048,
+        "min": 22312856,
+        "max": 216228576,
+        "range": 193915720,
+        "n": 3
+      },
+      "closed_rss_bytes": {
+        "median": 273776640,
+        "min": 265191424,
+        "max": 274038784,
+        "range": 8847360,
+        "n": 3
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_operation_ns": {
+        "median": 13944,
+        "min": 13722,
+        "max": 14407,
+        "range": 685,
+        "n": 3
+      },
+      "invalid_invoke_median_ns": {
+        "median": 74482,
+        "min": 73741,
+        "max": 85926,
+        "range": 12185,
+        "n": 3
+      },
+      "invalid_invoke_max_ns": {
+        "median": 91408,
+        "min": 79148,
+        "max": 480944,
+        "range": 401796,
+        "n": 3
+      },
+      "cgroup_peak_bytes": {
+        "median": 265814016,
+        "min": 256802816,
+        "max": 266108928,
+        "range": 9306112,
+        "n": 3
+      },
+      "cache_bytes": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      }
+    }
+  },
+  "prune-dce:disabled": {
+    "valid": 3,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 165511168,
+        "min": 163954688,
+        "max": 165675008,
+        "range": 1720320,
+        "n": 3
+      },
+      "core-ready_process_peak_bytes": {
+        "median": 158695424,
+        "min": 155566080,
+        "max": 158859264,
+        "range": 3293184,
+        "n": 3
+      },
+      "core-ready_cgroup_peak_bytes": {
+        "median": 150290432,
+        "min": 150044672,
+        "max": 151404544,
+        "range": 1359872,
+        "n": 3
+      },
+      "core-ready_user_cpu_us": {
+        "median": 4282449,
+        "min": 4266659,
+        "max": 4298359,
+        "range": 31700,
+        "n": 3
+      },
+      "core-ready_system_cpu_us": {
+        "median": 60093,
+        "min": 51739,
+        "max": 72173,
+        "range": 20434,
+        "n": 3
+      },
+      "core-ready_NumGC": {
+        "median": 7,
+        "min": 7,
+        "max": 7,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_PauseTotalNs": {
+        "median": 412961,
+        "min": 397110,
+        "max": 460110,
+        "range": 63000,
+        "n": 3
+      },
+      "core-ready_TotalAlloc": {
+        "median": 125529192,
+        "min": 125526616,
+        "max": 125529256,
+        "range": 2640,
+        "n": 3
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 110746136,
+        "min": 107339128,
+        "max": 110770648,
+        "range": 3431520,
+        "n": 3
+      },
+      "core-ready_rss_bytes": {
+        "median": 159891456,
+        "min": 156909568,
+        "max": 159924224,
+        "range": 3014656,
+        "n": 3
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_operation_ns": {
+        "median": 4345227418,
+        "min": 4321839976,
+        "max": 4378645085,
+        "range": 56805109,
+        "n": 3
+      },
+      "invalid-init_process_peak_bytes": {
+        "median": 165511168,
+        "min": 162381824,
+        "max": 165675008,
+        "range": 3293184,
+        "n": 3
+      },
+      "invalid-init_cgroup_peak_bytes": {
+        "median": 156581888,
+        "min": 156336128,
+        "max": 157696000,
+        "range": 1359872,
+        "n": 3
+      },
+      "invalid-init_user_cpu_us": {
+        "median": 4282913,
+        "min": 4273175,
+        "max": 4305369,
+        "range": 32194,
+        "n": 3
+      },
+      "invalid-init_system_cpu_us": {
+        "median": 60129,
+        "min": 55725,
+        "max": 72224,
+        "range": 16499,
+        "n": 3
+      },
+      "invalid-init_NumGC": {
+        "median": 7,
+        "min": 7,
+        "max": 7,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_PauseTotalNs": {
+        "median": 412961,
+        "min": 397110,
+        "max": 460110,
+        "range": 63000,
+        "n": 3
+      },
+      "invalid-init_TotalAlloc": {
+        "median": 132528224,
+        "min": 132522680,
+        "max": 132528272,
+        "range": 5592,
+        "n": 3
+      },
+      "invalid-init_heap_alloc_bytes": {
+        "median": 117745216,
+        "min": 114335192,
+        "max": 117769616,
+        "range": 3434424,
+        "n": 3
+      },
+      "invalid-init_rss_bytes": {
+        "median": 166789120,
+        "min": 163790848,
+        "max": 166838272,
+        "range": 3047424,
+        "n": 3
+      },
+      "invalid-init_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_operation_ns": {
+        "median": 3103405,
+        "min": 2894609,
+        "max": 3439683,
+        "range": 545074,
+        "n": 3
+      },
+      "settled_process_peak_bytes": {
+        "median": 165511168,
+        "min": 163954688,
+        "max": 165675008,
+        "range": 1720320,
+        "n": 3
+      },
+      "settled_cgroup_peak_bytes": {
+        "median": 157696000,
+        "min": 157270016,
+        "max": 159154176,
+        "range": 1884160,
+        "n": 3
+      },
+      "settled_user_cpu_us": {
+        "median": 4283092,
+        "min": 4279870,
+        "max": 4313193,
+        "range": 33323,
+        "n": 3
+      },
+      "settled_system_cpu_us": {
+        "median": 62971,
+        "min": 61621,
+        "max": 72249,
+        "range": 10628,
+        "n": 3
+      },
+      "settled_NumGC": {
+        "median": 8,
+        "min": 7,
+        "max": 8,
+        "range": 1,
+        "n": 3
+      },
+      "settled_PauseTotalNs": {
+        "median": 459276,
+        "min": 412961,
+        "max": 541351,
+        "range": 128390,
+        "n": 3
+      },
+      "settled_TotalAlloc": {
+        "median": 133903776,
+        "min": 133895000,
+        "max": 133903824,
+        "range": 8824,
+        "n": 3
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 23141976,
+        "min": 23141944,
+        "max": 115707512,
+        "range": 92565568,
+        "n": 3
+      },
+      "settled_rss_bytes": {
+        "median": 166969344,
+        "min": 165036032,
+        "max": 166969344,
+        "range": 1933312,
+        "n": 3
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 3
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_process_peak_bytes": {
+        "median": 165511168,
+        "min": 163954688,
+        "max": 165675008,
+        "range": 1720320,
+        "n": 3
+      },
+      "closed_cgroup_peak_bytes": {
+        "median": 157696000,
+        "min": 157270016,
+        "max": 159154176,
+        "range": 1884160,
+        "n": 3
+      },
+      "closed_user_cpu_us": {
+        "median": 4283092,
+        "min": 4280286,
+        "max": 4314799,
+        "range": 34513,
+        "n": 3
+      },
+      "closed_system_cpu_us": {
+        "median": 64124,
+        "min": 64068,
+        "max": 72249,
+        "range": 8181,
+        "n": 3
+      },
+      "closed_NumGC": {
+        "median": 8,
+        "min": 7,
+        "max": 8,
+        "range": 1,
+        "n": 3
+      },
+      "closed_PauseTotalNs": {
+        "median": 459276,
+        "min": 412961,
+        "max": 541351,
+        "range": 128390,
+        "n": 3
+      },
+      "closed_TotalAlloc": {
+        "median": 134099752,
+        "min": 134091024,
+        "max": 134099800,
+        "range": 8776,
+        "n": 3
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 23337952,
+        "min": 23337920,
+        "max": 115903536,
+        "range": 92565616,
+        "n": 3
+      },
+      "closed_rss_bytes": {
+        "median": 166969344,
+        "min": 165298176,
+        "max": 166985728,
+        "range": 1687552,
+        "n": 3
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_operation_ns": {
+        "median": 13814,
+        "min": 13648,
+        "max": 17314,
+        "range": 3666,
+        "n": 3
+      },
+      "invalid_invoke_median_ns": {
+        "median": 85074,
+        "min": 82741,
+        "max": 86259,
+        "range": 3518,
+        "n": 3
+      },
+      "invalid_invoke_max_ns": {
+        "median": 117074,
+        "min": 83888,
+        "max": 163407,
+        "range": 79519,
+        "n": 3
+      },
+      "cgroup_peak_bytes": {
+        "median": 157696000,
+        "min": 157270016,
+        "max": 159154176,
+        "range": 1884160,
+        "n": 3
+      },
+      "cache_bytes": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      }
+    }
+  },
+  "stripped:disabled": {
+    "valid": 3,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 165969920,
+        "min": 165609472,
+        "max": 165986304,
+        "range": 376832,
+        "n": 3
+      },
+      "core-ready_process_peak_bytes": {
+        "median": 158269440,
+        "min": 158121984,
+        "max": 158629888,
+        "range": 507904,
+        "n": 3
+      },
+      "core-ready_cgroup_peak_bytes": {
+        "median": 152354816,
+        "min": 152076288,
+        "max": 152502272,
+        "range": 425984,
+        "n": 3
+      },
+      "core-ready_user_cpu_us": {
+        "median": 4461335,
+        "min": 4392930,
+        "max": 4530413,
+        "range": 137483,
+        "n": 3
+      },
+      "core-ready_system_cpu_us": {
+        "median": 32009,
+        "min": 24136,
+        "max": 55881,
+        "range": 31745,
+        "n": 3
+      },
+      "core-ready_NumGC": {
+        "median": 7,
+        "min": 7,
+        "max": 7,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_PauseTotalNs": {
+        "median": 450519,
+        "min": 404945,
+        "max": 483428,
+        "range": 78483,
+        "n": 3
+      },
+      "core-ready_TotalAlloc": {
+        "median": 125837440,
+        "min": 125837120,
+        "max": 125891496,
+        "range": 54376,
+        "n": 3
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 111064424,
+        "min": 110980512,
+        "max": 111131192,
+        "range": 150680,
+        "n": 3
+      },
+      "core-ready_rss_bytes": {
+        "median": 160104448,
+        "min": 160088064,
+        "max": 160169984,
+        "range": 81920,
+        "n": 3
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_operation_ns": {
+        "median": 4485446988,
+        "min": 4442188125,
+        "max": 4582636266,
+        "range": 140448141,
+        "n": 3
+      },
+      "invalid-init_process_peak_bytes": {
+        "median": 165969920,
+        "min": 165085184,
+        "max": 165986304,
+        "range": 901120,
+        "n": 3
+      },
+      "invalid-init_cgroup_peak_bytes": {
+        "median": 158515200,
+        "min": 158367744,
+        "max": 158810112,
+        "range": 442368,
+        "n": 3
+      },
+      "invalid-init_user_cpu_us": {
+        "median": 4491778,
+        "min": 4427156,
+        "max": 4566769,
+        "range": 139613,
+        "n": 3
+      },
+      "invalid-init_system_cpu_us": {
+        "median": 39962,
+        "min": 28147,
+        "max": 55935,
+        "range": 27788,
+        "n": 3
+      },
+      "invalid-init_NumGC": {
+        "median": 7,
+        "min": 7,
+        "max": 7,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_PauseTotalNs": {
+        "median": 450519,
+        "min": 404945,
+        "max": 483428,
+        "range": 78483,
+        "n": 3
+      },
+      "invalid-init_TotalAlloc": {
+        "median": 133064648,
+        "min": 133064344,
+        "max": 133154032,
+        "range": 89688,
+        "n": 3
+      },
+      "invalid-init_heap_alloc_bytes": {
+        "median": 118291648,
+        "min": 118243048,
+        "max": 118358400,
+        "range": 115352,
+        "n": 3
+      },
+      "invalid-init_rss_bytes": {
+        "median": 167264256,
+        "min": 167133184,
+        "max": 167297024,
+        "range": 163840,
+        "n": 3
+      },
+      "invalid-init_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_operation_ns": {
+        "median": 35090884,
+        "min": 32869367,
+        "max": 35162217,
+        "range": 2292850,
+        "n": 3
+      },
+      "settled_process_peak_bytes": {
+        "median": 165969920,
+        "min": 165609472,
+        "max": 165986304,
+        "range": 376832,
+        "n": 3
+      },
+      "settled_cgroup_peak_bytes": {
+        "median": 158515200,
+        "min": 158367744,
+        "max": 158810112,
+        "range": 442368,
+        "n": 3
+      },
+      "settled_user_cpu_us": {
+        "median": 4498561,
+        "min": 4436103,
+        "max": 4567209,
+        "range": 131106,
+        "n": 3
+      },
+      "settled_system_cpu_us": {
+        "median": 42718,
+        "min": 28187,
+        "max": 63391,
+        "range": 35204,
+        "n": 3
+      },
+      "settled_NumGC": {
+        "median": 8,
+        "min": 8,
+        "max": 8,
+        "range": 0,
+        "n": 3
+      },
+      "settled_PauseTotalNs": {
+        "median": 514482,
+        "min": 481112,
+        "max": 545835,
+        "range": 64723,
+        "n": 3
+      },
+      "settled_TotalAlloc": {
+        "median": 134460160,
+        "min": 134450376,
+        "max": 134670832,
+        "range": 220456,
+        "n": 3
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 23528048,
+        "min": 23518280,
+        "max": 23676344,
+        "range": 158064,
+        "n": 3
+      },
+      "settled_rss_bytes": {
+        "median": 167329792,
+        "min": 167264256,
+        "max": 167362560,
+        "range": 98304,
+        "n": 3
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 3
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_process_peak_bytes": {
+        "median": 165969920,
+        "min": 165609472,
+        "max": 165986304,
+        "range": 376832,
+        "n": 3
+      },
+      "closed_cgroup_peak_bytes": {
+        "median": 158515200,
+        "min": 158367744,
+        "max": 158810112,
+        "range": 442368,
+        "n": 3
+      },
+      "closed_user_cpu_us": {
+        "median": 4498869,
+        "min": 4437760,
+        "max": 4568331,
+        "range": 130571,
+        "n": 3
+      },
+      "closed_system_cpu_us": {
+        "median": 44028,
+        "min": 28189,
+        "max": 63836,
+        "range": 35647,
+        "n": 3
+      },
+      "closed_NumGC": {
+        "median": 8,
+        "min": 8,
+        "max": 8,
+        "range": 0,
+        "n": 3
+      },
+      "closed_PauseTotalNs": {
+        "median": 514482,
+        "min": 481112,
+        "max": 545835,
+        "range": 64723,
+        "n": 3
+      },
+      "closed_TotalAlloc": {
+        "median": 134658680,
+        "min": 134648896,
+        "max": 134902120,
+        "range": 253224,
+        "n": 3
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 23726568,
+        "min": 23716800,
+        "max": 23907632,
+        "range": 190832,
+        "n": 3
+      },
+      "closed_rss_bytes": {
+        "median": 167493632,
+        "min": 167444480,
+        "max": 167510016,
+        "range": 65536,
+        "n": 3
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_operation_ns": {
+        "median": 13870,
+        "min": 13370,
+        "max": 14000,
+        "range": 630,
+        "n": 3
+      },
+      "invalid_invoke_median_ns": {
+        "median": 77611,
+        "min": 76074,
+        "max": 82592,
+        "range": 6518,
+        "n": 3
+      },
+      "invalid_invoke_max_ns": {
+        "median": 88389,
+        "min": 77944,
+        "max": 99037,
+        "range": 21093,
+        "n": 3
+      },
+      "cgroup_peak_bytes": {
+        "median": 158515200,
+        "min": 158367744,
+        "max": 158810112,
+        "range": 442368,
+        "n": 3
+      },
+      "cache_bytes": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      }
+    }
+  },
+  "prune-oz:disabled": {
+    "valid": 3,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 271532032,
+        "min": 264617984,
+        "max": 271925248,
+        "range": 7307264,
+        "n": 3
+      },
+      "core-ready_process_peak_bytes": {
+        "median": 266682368,
+        "min": 257277952,
+        "max": 271007744,
+        "range": 13729792,
+        "n": 3
+      },
+      "core-ready_cgroup_peak_bytes": {
+        "median": 260603904,
+        "min": 249331712,
+        "max": 264290304,
+        "range": 14958592,
+        "n": 3
+      },
+      "core-ready_user_cpu_us": {
+        "median": 6119403,
+        "min": 6116823,
+        "max": 6127875,
+        "range": 11052,
+        "n": 3
+      },
+      "core-ready_system_cpu_us": {
+        "median": 83792,
+        "min": 60151,
+        "max": 111343,
+        "range": 51192,
+        "n": 3
+      },
+      "core-ready_NumGC": {
+        "median": 10,
+        "min": 10,
+        "max": 10,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_PauseTotalNs": {
+        "median": 664590,
+        "min": 652963,
+        "max": 694150,
+        "range": 41187,
+        "n": 3
+      },
+      "core-ready_TotalAlloc": {
+        "median": 268547144,
+        "min": 268510296,
+        "max": 268584792,
+        "range": 74496,
+        "n": 3
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 201134576,
+        "min": 14044184,
+        "max": 209057464,
+        "range": 195013280,
+        "n": 3
+      },
+      "core-ready_rss_bytes": {
+        "median": 268042240,
+        "min": 257867776,
+        "max": 272793600,
+        "range": 14925824,
+        "n": 3
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_operation_ns": {
+        "median": 6141223046,
+        "min": 6115792657,
+        "max": 6151471675,
+        "range": 35679018,
+        "n": 3
+      },
+      "invalid-init_process_peak_bytes": {
+        "median": 271007744,
+        "min": 263045120,
+        "max": 271925248,
+        "range": 8880128,
+        "n": 3
+      },
+      "invalid-init_cgroup_peak_bytes": {
+        "median": 264290304,
+        "min": 254574592,
+        "max": 265846784,
+        "range": 11272192,
+        "n": 3
+      },
+      "invalid-init_user_cpu_us": {
+        "median": 6121333,
+        "min": 6119590,
+        "max": 6128449,
+        "range": 8859,
+        "n": 3
+      },
+      "invalid-init_system_cpu_us": {
+        "median": 83799,
+        "min": 64163,
+        "max": 115330,
+        "range": 51167,
+        "n": 3
+      },
+      "invalid-init_NumGC": {
+        "median": 10,
+        "min": 10,
+        "max": 10,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_PauseTotalNs": {
+        "median": 664590,
+        "min": 652963,
+        "max": 694150,
+        "range": 41187,
+        "n": 3
+      },
+      "invalid-init_TotalAlloc": {
+        "median": 274884920,
+        "min": 274883400,
+        "max": 274925128,
+        "range": 41728,
+        "n": 3
+      },
+      "invalid-init_heap_alloc_bytes": {
+        "median": 207472352,
+        "min": 20417288,
+        "max": 215397800,
+        "range": 194980512,
+        "n": 3
+      },
+      "invalid-init_rss_bytes": {
+        "median": 272891904,
+        "min": 264110080,
+        "max": 273137664,
+        "range": 9027584,
+        "n": 3
+      },
+      "invalid-init_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_operation_ns": {
+        "median": 2172869,
+        "min": 1873980,
+        "max": 2351702,
+        "range": 477722,
+        "n": 3
+      },
+      "settled_process_peak_bytes": {
+        "median": 271007744,
+        "min": 264617984,
+        "max": 271925248,
+        "range": 7307264,
+        "n": 3
+      },
+      "settled_cgroup_peak_bytes": {
+        "median": 264290304,
+        "min": 256557056,
+        "max": 265846784,
+        "range": 9289728,
+        "n": 3
+      },
+      "settled_user_cpu_us": {
+        "median": 6127056,
+        "min": 6119590,
+        "max": 6132547,
+        "range": 12957,
+        "n": 3
+      },
+      "settled_system_cpu_us": {
+        "median": 85478,
+        "min": 71416,
+        "max": 119256,
+        "range": 47840,
+        "n": 3
+      },
+      "settled_NumGC": {
+        "median": 10,
+        "min": 10,
+        "max": 10,
+        "range": 0,
+        "n": 3
+      },
+      "settled_PauseTotalNs": {
+        "median": 664590,
+        "min": 652963,
+        "max": 694150,
+        "range": 41187,
+        "n": 3
+      },
+      "settled_TotalAlloc": {
+        "median": 276310120,
+        "min": 276259672,
+        "max": 276399464,
+        "range": 139792,
+        "n": 3
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 208847104,
+        "min": 21933352,
+        "max": 216782792,
+        "range": 194849440,
+        "n": 3
+      },
+      "settled_rss_bytes": {
+        "median": 272973824,
+        "min": 265404416,
+        "max": 273154048,
+        "range": 7749632,
+        "n": 3
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 3
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_process_peak_bytes": {
+        "median": 271532032,
+        "min": 264617984,
+        "max": 271925248,
+        "range": 7307264,
+        "n": 3
+      },
+      "closed_cgroup_peak_bytes": {
+        "median": 264290304,
+        "min": 256557056,
+        "max": 265846784,
+        "range": 9289728,
+        "n": 3
+      },
+      "closed_user_cpu_us": {
+        "median": 6127056,
+        "min": 6121240,
+        "max": 6132547,
+        "range": 11307,
+        "n": 3
+      },
+      "closed_system_cpu_us": {
+        "median": 87613,
+        "min": 72156,
+        "max": 121304,
+        "range": 49148,
+        "n": 3
+      },
+      "closed_NumGC": {
+        "median": 10,
+        "min": 10,
+        "max": 10,
+        "range": 0,
+        "n": 3
+      },
+      "closed_PauseTotalNs": {
+        "median": 664590,
+        "min": 652963,
+        "max": 694150,
+        "range": 41187,
+        "n": 3
+      },
+      "closed_TotalAlloc": {
+        "median": 276508640,
+        "min": 276455632,
+        "max": 276630752,
+        "range": 175120,
+        "n": 3
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 209043064,
+        "min": 22164640,
+        "max": 216981312,
+        "range": 194816672,
+        "n": 3
+      },
+      "closed_rss_bytes": {
+        "median": 273088512,
+        "min": 265535488,
+        "max": 273154048,
+        "range": 7618560,
+        "n": 3
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_operation_ns": {
+        "median": 14666,
+        "min": 13704,
+        "max": 15741,
+        "range": 2037,
+        "n": 3
+      },
+      "invalid_invoke_median_ns": {
+        "median": 74482,
+        "min": 72000,
+        "max": 113167,
+        "range": 41167,
+        "n": 3
+      },
+      "invalid_invoke_max_ns": {
+        "median": 80518,
+        "min": 79352,
+        "max": 122888,
+        "range": 43536,
+        "n": 3
+      },
+      "cgroup_peak_bytes": {
+        "median": 264290304,
+        "min": 256557056,
+        "max": 265846784,
+        "range": 9289728,
+        "n": 3
+      },
+      "cache_bytes": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      }
+    }
+  },
+  "prune-only:disabled": {
+    "valid": 3,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 169164800,
+        "min": 166510592,
+        "max": 169164800,
+        "range": 2654208,
+        "n": 3
+      },
+      "core-ready_process_peak_bytes": {
+        "median": 160251904,
+        "min": 157073408,
+        "max": 160251904,
+        "range": 3178496,
+        "n": 3
+      },
+      "core-ready_cgroup_peak_bytes": {
+        "median": 152911872,
+        "min": 151453696,
+        "max": 153157632,
+        "range": 1703936,
+        "n": 3
+      },
+      "core-ready_user_cpu_us": {
+        "median": 4335868,
+        "min": 4331416,
+        "max": 4359517,
+        "range": 28101,
+        "n": 3
+      },
+      "core-ready_system_cpu_us": {
+        "median": 71527,
+        "min": 51662,
+        "max": 83765,
+        "range": 32103,
+        "n": 3
+      },
+      "core-ready_NumGC": {
+        "median": 7,
+        "min": 7,
+        "max": 7,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_PauseTotalNs": {
+        "median": 420001,
+        "min": 416740,
+        "max": 430554,
+        "range": 13814,
+        "n": 3
+      },
+      "core-ready_TotalAlloc": {
+        "median": 127115336,
+        "min": 127114872,
+        "max": 127115512,
+        "range": 640,
+        "n": 3
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 111170216,
+        "min": 107947488,
+        "max": 111289288,
+        "range": 3341800,
+        "n": 3
+      },
+      "core-ready_rss_bytes": {
+        "median": 161873920,
+        "min": 158924800,
+        "max": 161923072,
+        "range": 2998272,
+        "n": 3
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_operation_ns": {
+        "median": 4420442954,
+        "min": 4393725855,
+        "max": 4428483493,
+        "range": 34757638,
+        "n": 3
+      },
+      "invalid-init_process_peak_bytes": {
+        "median": 168640512,
+        "min": 164937728,
+        "max": 169164800,
+        "range": 4227072,
+        "n": 3
+      },
+      "invalid-init_cgroup_peak_bytes": {
+        "median": 161300480,
+        "min": 159842304,
+        "max": 161529856,
+        "range": 1687552,
+        "n": 3
+      },
+      "invalid-init_user_cpu_us": {
+        "median": 4343513,
+        "min": 4335253,
+        "max": 4361212,
+        "range": 25959,
+        "n": 3
+      },
+      "invalid-init_system_cpu_us": {
+        "median": 75430,
+        "min": 55607,
+        "max": 83836,
+        "range": 28229,
+        "n": 3
+      },
+      "invalid-init_NumGC": {
+        "median": 7,
+        "min": 7,
+        "max": 7,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_PauseTotalNs": {
+        "median": 420001,
+        "min": 416740,
+        "max": 430554,
+        "range": 13814,
+        "n": 3
+      },
+      "invalid-init_TotalAlloc": {
+        "median": 135611560,
+        "min": 135578064,
+        "max": 135614296,
+        "range": 36232,
+        "n": 3
+      },
+      "invalid-init_heap_alloc_bytes": {
+        "median": 119666440,
+        "min": 116410680,
+        "max": 119788072,
+        "range": 3377392,
+        "n": 3
+      },
+      "invalid-init_rss_bytes": {
+        "median": 170131456,
+        "min": 166969344,
+        "max": 170147840,
+        "range": 3178496,
+        "n": 3
+      },
+      "invalid-init_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_operation_ns": {
+        "median": 4277867,
+        "min": 3969609,
+        "max": 4306461,
+        "range": 336852,
+        "n": 3
+      },
+      "settled_process_peak_bytes": {
+        "median": 168640512,
+        "min": 166510592,
+        "max": 169164800,
+        "range": 2654208,
+        "n": 3
+      },
+      "settled_cgroup_peak_bytes": {
+        "median": 161300480,
+        "min": 161038336,
+        "max": 161529856,
+        "range": 491520,
+        "n": 3
+      },
+      "settled_user_cpu_us": {
+        "median": 4346911,
+        "min": 4341404,
+        "max": 4364131,
+        "range": 22727,
+        "n": 3
+      },
+      "settled_system_cpu_us": {
+        "median": 79440,
+        "min": 58038,
+        "max": 90571,
+        "range": 32533,
+        "n": 3
+      },
+      "settled_NumGC": {
+        "median": 8,
+        "min": 7,
+        "max": 8,
+        "range": 1,
+        "n": 3
+      },
+      "settled_PauseTotalNs": {
+        "median": 496258,
+        "min": 420001,
+        "max": 505554,
+        "range": 85553,
+        "n": 3
+      },
+      "settled_TotalAlloc": {
+        "median": 137138792,
+        "min": 136963248,
+        "max": 137141528,
+        "range": 178280,
+        "n": 3
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 25921304,
+        "min": 25921144,
+        "max": 117795864,
+        "range": 91874720,
+        "n": 3
+      },
+      "settled_rss_bytes": {
+        "median": 170246144,
+        "min": 168312832,
+        "max": 170442752,
+        "range": 2129920,
+        "n": 3
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 3
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_process_peak_bytes": {
+        "median": 169164800,
+        "min": 166510592,
+        "max": 169164800,
+        "range": 2654208,
+        "n": 3
+      },
+      "closed_cgroup_peak_bytes": {
+        "median": 161300480,
+        "min": 161038336,
+        "max": 161529856,
+        "range": 491520,
+        "n": 3
+      },
+      "closed_user_cpu_us": {
+        "median": 4347341,
+        "min": 4341404,
+        "max": 4364131,
+        "range": 22727,
+        "n": 3
+      },
+      "closed_system_cpu_us": {
+        "median": 81150,
+        "min": 60370,
+        "max": 91817,
+        "range": 31447,
+        "n": 3
+      },
+      "closed_NumGC": {
+        "median": 8,
+        "min": 7,
+        "max": 8,
+        "range": 1,
+        "n": 3
+      },
+      "closed_PauseTotalNs": {
+        "median": 496258,
+        "min": 420001,
+        "max": 505554,
+        "range": 85553,
+        "n": 3
+      },
+      "closed_TotalAlloc": {
+        "median": 137372688,
+        "min": 137161816,
+        "max": 137375424,
+        "range": 213608,
+        "n": 3
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 26155200,
+        "min": 26155040,
+        "max": 117994432,
+        "range": 91839392,
+        "n": 3
+      },
+      "closed_rss_bytes": {
+        "median": 170442752,
+        "min": 168591360,
+        "max": 170606592,
+        "range": 2015232,
+        "n": 3
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_operation_ns": {
+        "median": 14389,
+        "min": 14111,
+        "max": 17334,
+        "range": 3223,
+        "n": 3
+      },
+      "invalid_invoke_median_ns": {
+        "median": 79019,
+        "min": 76945,
+        "max": 88463,
+        "range": 11518,
+        "n": 3
+      },
+      "invalid_invoke_max_ns": {
+        "median": 91425,
+        "min": 89277,
+        "max": 104167,
+        "range": 14890,
+        "n": 3
+      },
+      "cgroup_peak_bytes": {
+        "median": 161300480,
+        "min": 161038336,
+        "max": 161529856,
+        "range": 491520,
+        "n": 3
+      },
+      "cache_bytes": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      }
+    }
+  },
+  "original:disabled": {
+    "valid": 3,
+    "failures": [],
+    "metrics": {
+      "process_peak_bytes": {
+        "median": 169132032,
+        "min": 169132032,
+        "max": 169656320,
+        "range": 524288,
+        "n": 3
+      },
+      "core-ready_process_peak_bytes": {
+        "median": 160219136,
+        "min": 160219136,
+        "max": 160743424,
+        "range": 524288,
+        "n": 3
+      },
+      "core-ready_cgroup_peak_bytes": {
+        "median": 151912448,
+        "min": 151142400,
+        "max": 152535040,
+        "range": 1392640,
+        "n": 3
+      },
+      "core-ready_user_cpu_us": {
+        "median": 4335654,
+        "min": 4334444,
+        "max": 4365455,
+        "range": 31011,
+        "n": 3
+      },
+      "core-ready_system_cpu_us": {
+        "median": 68022,
+        "min": 32115,
+        "max": 75902,
+        "range": 43787,
+        "n": 3
+      },
+      "core-ready_NumGC": {
+        "median": 7,
+        "min": 7,
+        "max": 7,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_PauseTotalNs": {
+        "median": 430924,
+        "min": 426852,
+        "max": 436258,
+        "range": 9406,
+        "n": 3
+      },
+      "core-ready_TotalAlloc": {
+        "median": 127330992,
+        "min": 127330976,
+        "max": 127386360,
+        "range": 55384,
+        "n": 3
+      },
+      "core-ready_heap_alloc_bytes": {
+        "median": 111723616,
+        "min": 111142464,
+        "max": 112183080,
+        "range": 1040616,
+        "n": 3
+      },
+      "core-ready_rss_bytes": {
+        "median": 162185216,
+        "min": 161677312,
+        "max": 162758656,
+        "range": 1081344,
+        "n": 3
+      },
+      "core-ready_main_pages": {
+        "median": 62,
+        "min": 62,
+        "max": 62,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "core-ready_operation_ns": {
+        "median": 4409824073,
+        "min": 4362668163,
+        "max": 4442847416,
+        "range": 80179253,
+        "n": 3
+      },
+      "invalid-init_process_peak_bytes": {
+        "median": 168607744,
+        "min": 168083456,
+        "max": 169132032,
+        "range": 1048576,
+        "n": 3
+      },
+      "invalid-init_cgroup_peak_bytes": {
+        "median": 160612352,
+        "min": 160317440,
+        "max": 160923648,
+        "range": 606208,
+        "n": 3
+      },
+      "invalid-init_user_cpu_us": {
+        "median": 4370061,
+        "min": 4369854,
+        "max": 4401615,
+        "range": 31761,
+        "n": 3
+      },
+      "invalid-init_system_cpu_us": {
+        "median": 72026,
+        "min": 36081,
+        "max": 75902,
+        "range": 39821,
+        "n": 3
+      },
+      "invalid-init_NumGC": {
+        "median": 7,
+        "min": 7,
+        "max": 7,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_PauseTotalNs": {
+        "median": 430924,
+        "min": 426852,
+        "max": 436258,
+        "range": 9406,
+        "n": 3
+      },
+      "invalid-init_TotalAlloc": {
+        "median": 135874736,
+        "min": 135874488,
+        "max": 135894792,
+        "range": 20304,
+        "n": 3
+      },
+      "invalid-init_heap_alloc_bytes": {
+        "median": 120267376,
+        "min": 119685960,
+        "max": 120691512,
+        "range": 1005552,
+        "n": 3
+      },
+      "invalid-init_rss_bytes": {
+        "median": 170409984,
+        "min": 169885696,
+        "max": 170967040,
+        "range": 1081344,
+        "n": 3
+      },
+      "invalid-init_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "invalid-init_operation_ns": {
+        "median": 34912051,
+        "min": 34412255,
+        "max": 37397642,
+        "range": 2985387,
+        "n": 3
+      },
+      "settled_process_peak_bytes": {
+        "median": 169132032,
+        "min": 169132032,
+        "max": 169656320,
+        "range": 524288,
+        "n": 3
+      },
+      "settled_cgroup_peak_bytes": {
+        "median": 161349632,
+        "min": 160612352,
+        "max": 161972224,
+        "range": 1359872,
+        "n": 3
+      },
+      "settled_user_cpu_us": {
+        "median": 4380074,
+        "min": 4379703,
+        "max": 4407647,
+        "range": 27944,
+        "n": 3
+      },
+      "settled_system_cpu_us": {
+        "median": 75902,
+        "min": 36137,
+        "max": 76062,
+        "range": 39925,
+        "n": 3
+      },
+      "settled_NumGC": {
+        "median": 8,
+        "min": 8,
+        "max": 8,
+        "range": 0,
+        "n": 3
+      },
+      "settled_PauseTotalNs": {
+        "median": 516905,
+        "min": 497054,
+        "max": 556333,
+        "range": 59279,
+        "n": 3
+      },
+      "settled_TotalAlloc": {
+        "median": 137401776,
+        "min": 137280520,
+        "max": 137411496,
+        "range": 130976,
+        "n": 3
+      },
+      "settled_heap_alloc_bytes": {
+        "median": 26054768,
+        "min": 20439576,
+        "max": 26168288,
+        "range": 5728712,
+        "n": 3
+      },
+      "settled_rss_bytes": {
+        "median": 171343872,
+        "min": 170639360,
+        "max": 171540480,
+        "range": 901120,
+        "n": 3
+      },
+      "settled_main_pages": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "range": 0,
+        "n": 3
+      },
+      "settled_kernel_pages": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "range": 0,
+        "n": 3
+      },
+      "settled_operation_ns": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_process_peak_bytes": {
+        "median": 169132032,
+        "min": 169132032,
+        "max": 169656320,
+        "range": 524288,
+        "n": 3
+      },
+      "closed_cgroup_peak_bytes": {
+        "median": 161349632,
+        "min": 160612352,
+        "max": 161972224,
+        "range": 1359872,
+        "n": 3
+      },
+      "closed_user_cpu_us": {
+        "median": 4381740,
+        "min": 4381478,
+        "max": 4407647,
+        "range": 26169,
+        "n": 3
+      },
+      "closed_system_cpu_us": {
+        "median": 75902,
+        "min": 36137,
+        "max": 78530,
+        "range": 42393,
+        "n": 3
+      },
+      "closed_NumGC": {
+        "median": 8,
+        "min": 8,
+        "max": 8,
+        "range": 0,
+        "n": 3
+      },
+      "closed_PauseTotalNs": {
+        "median": 516905,
+        "min": 497054,
+        "max": 556333,
+        "range": 59279,
+        "n": 3
+      },
+      "closed_TotalAlloc": {
+        "median": 137635624,
+        "min": 137479040,
+        "max": 137636072,
+        "range": 157032,
+        "n": 3
+      },
+      "closed_heap_alloc_bytes": {
+        "median": 26253288,
+        "min": 20664152,
+        "max": 26402136,
+        "range": 5737984,
+        "n": 3
+      },
+      "closed_rss_bytes": {
+        "median": 171425792,
+        "min": 170803200,
+        "max": 171687936,
+        "range": 884736,
+        "n": 3
+      },
+      "closed_main_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_kernel_pages": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      },
+      "closed_operation_ns": {
+        "median": 13852,
+        "min": 12833,
+        "max": 16777,
+        "range": 3944,
+        "n": 3
+      },
+      "invalid_invoke_median_ns": {
+        "median": 86111,
+        "min": 78944,
+        "max": 87722,
+        "range": 8778,
+        "n": 3
+      },
+      "invalid_invoke_max_ns": {
+        "median": 93537,
+        "min": 92593,
+        "max": 109351,
+        "range": 16758,
+        "n": 3
+      },
+      "cgroup_peak_bytes": {
+        "median": 161349632,
+        "min": 160612352,
+        "max": 161972224,
+        "range": 1359872,
+        "n": 3
+      },
+      "cache_bytes": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "range": 0,
+        "n": 3
+      }
+    }
+  }
+}
