@@ -27,7 +27,7 @@ Shipping WASM, ordinary SDK code, `go.mod`, and `go.sum` remain unchanged from t
 
 ## Final campaign validation
 
-Both Linux and Darwin campaign binaries were built from clean commit `ca21b38cd6c4359d1898a30b79c771e9b7ce52ff`. Build manifests retain exact source, dependency, overlay and binary hashes. Post-campaign changes package/replay evidence, update documentation and force offline/local-toolchain behavior for build metadata lookups; they do not alter the measured Go probe or shipping runtime.
+Both Linux and Darwin campaign binaries were built from clean local commit `ca21b38cd6c4359d1898a30b79c771e9b7ce52ff`. Its published source-equivalent revision is `61393f578ad42ad240ce156a8f2149515af2f1fd`; [publication provenance](publication-provenance.json) records the pre-publication hostname redaction and commit mapping. Only initial tooling host metadata/history were sanitized; compiled Go inputs and all new campaign bundles are unchanged. Build manifests retain exact source, dependency, overlay and binary hashes. Post-campaign changes package/replay evidence, update documentation and force offline/local-toolchain behavior for build metadata lookups; they do not alter the measured Go probe or shipping runtime.
 
 Additional commands, all passed:
 

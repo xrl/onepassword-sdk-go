@@ -82,7 +82,7 @@ Ten measured processes plus two warmups per cell, same malformed operations and 
 
 ## Reproduction and integrity
 
-Use [the lab README](../README.md) and the exact option/order manifests. Run `python3 benchmarks/footprint/report.py` to revalidate archive digests, raw-to-summary peak/RSS arithmetic, protocol, source artifact identity, read-only hits and fresh PID/cgroup identities, then regenerate this report. `bundle.py` stores byte-exact text evidence with deterministic gzip metadata; no native cache or executable blobs are checked in.
+Use [the lab README](../README.md) and the exact option/order manifests. Run `python3 benchmarks/footprint/report.py` to revalidate archive digests, raw-to-summary peak/RSS arithmetic, protocol, source artifact identity, read-only hits and fresh PID/cgroup identities, then regenerate this report. `bundle.py` stores byte-exact text evidence with deterministic gzip metadata; no native cache or executable blobs are checked in. [Publication provenance](publication-provenance.json) maps the measured local source commit to its published source-equivalent revision after private host-metadata redaction; Go inputs and campaign bundles are unchanged.
 
 | Dataset | Measured | Warmups | Population | Total processes |
 |---|---:|---:|---:|---:|
