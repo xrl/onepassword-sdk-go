@@ -1,0 +1,43 @@
+name: xrl owned runtime
+on:
+  pull_request:
+    branches: [xrl/integration]
+  push:
+    branches: [xrl/integration]
+permissions:
+  contents: read
+jobs:
+  cache:
+    if: github.repository == 'xrl/onepassword-sdk-go'
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, ubuntu-24.04-arm]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version: '1.26.5'
+          cache: false
+      - name: Credential-free unit, lifecycle race and real-core tests
+        run: |
+          go version
+          echo '23d115f4ac7519b48172df3e8615945572dbda7033d51b44c9490fd533ae0f23  internal/wasm/core.wasm' | sha256sum -c -
+          go test -race . ./internal ./cmd/op-cache
+      - name: Compile all packages without private integration execution
+        run: |
+          go build ./...
+          go test -run '^$' ./...
+      - name: Native cross-process cache population and verification
+        run: |
+          go build -o "$RUNNER_TEMP/op-cache" ./cmd/op-cache
+          "$RUNNER_TEMP/op-cache" -directory "$RUNNER_TEMP/op-core-cache" -mode populate
+          "$RUNNER_TEMP/op-cache" -directory "$RUNNER_TEMP/op-core-cache" -mode verify
+          if "$RUNNER_TEMP/op-cache" -directory "$RUNNER_TEMP/missing-cache" -mode verify; then
+            echo 'require-hit unexpectedly accepted missing cache' >&2
+            exit 1
+          fi
+          test ! -e "$RUNNER_TEMP/missing-cache"
