@@ -63,8 +63,10 @@ compiler options, or toolchains. Concurrent population belongs outside startup.
 
 ## ESO integration contract
 
-The parent publishes SDK `github.com/xrl/onepassword-sdk-go v0.4.1-xrl.0` and runtime
-`github.com/xrl/wazero v1.12.0-xrl.0` after review and native CI. ESO must repeat both
+The reviewed runtime `github.com/xrl/wazero v1.12.0-xrl.0` is published and pinned
+with checksums. Its v1.12.0 dependency floor requires `golang.org/x/sys v0.44.0`.
+The parent publishes SDK `github.com/xrl/onepassword-sdk-go v0.4.1-xrl.0` only after
+SDK review and native CI. ESO must repeat both
 replacements in its main module; dependency replacements are not transitive:
 
 ```go
