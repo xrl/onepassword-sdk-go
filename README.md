@@ -14,6 +14,8 @@
 
 ---
 
+Fork integration: [opt-in owned runtime and credential-free compilation cache](docs/owned-runtime.md).
+
 ## 🚀 Get started
 
 You can choose between two [authentication methods](https://developer.1password.com/docs/sdks/concepts#authentication) for the 1Password Go SDK: local authorization prompts from the [1Password desktop app](#option-1-1password-desktop-app) or automated authentication with a [1Password Service Account](#option-2-1password-service-account).

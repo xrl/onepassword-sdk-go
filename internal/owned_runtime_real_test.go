@@ -53,7 +53,8 @@ func TestOwnedRuntimeRealCoreCache(t *testing.T) {
 		return nil
 	}))
 	require.NotEmpty(t, entries)
-	verify := func(want error) {
+	verify := func(t *testing.T, want error) {
+		t.Helper()
 		ro := NewOwnedRuntime(dir, true)
 		err := ro.Prepare(ctx)
 		if want == nil {
@@ -63,7 +64,7 @@ func TestOwnedRuntimeRealCoreCache(t *testing.T) {
 		}
 		require.NoError(t, ro.Close(ctx))
 	}
-	verify(nil)
+	verify(t, nil)
 	for path, data := range entries {
 		got, err := os.ReadFile(path)
 		require.NoError(t, err)
@@ -88,7 +89,7 @@ func TestOwnedRuntimeRealCoreCache(t *testing.T) {
 			for path, data := range entries {
 				require.NoError(t, tc.mutate(path, data))
 			}
-			verify(tc.want)
+			verify(t, tc.want)
 			for path, data := range entries {
 				got, err := os.ReadFile(path)
 				if tc.name == "missing" {
@@ -107,7 +108,7 @@ func TestOwnedRuntimeRealCoreCache(t *testing.T) {
 			}
 		})
 	}
-	verify(nil)
+	verify(t, nil)
 	missingDir := filepath.Join(t.TempDir(), "absent")
 	missing := NewOwnedRuntime(missingDir, true)
 	require.ErrorIs(t, missing.Prepare(ctx), wazero.ErrCompilationCacheIO)

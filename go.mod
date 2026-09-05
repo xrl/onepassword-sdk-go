@@ -1,12 +1,12 @@
 module github.com/1password/onepassword-sdk-go
 
-go 1.24.0
+go 1.26.5
 
 require (
 	github.com/extism/go-sdk v1.7.1
 	github.com/stretchr/testify v1.11.1
-	github.com/tetratelabs/wazero v1.11.0
-	golang.org/x/sys v0.40.0
+	github.com/tetratelabs/wazero v1.12.0
+	golang.org/x/sys v0.44.0
 )
 
 require (
@@ -20,3 +20,5 @@ require (
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/tetratelabs/wazero => github.com/xrl/wazero v1.12.0-xrl.0
